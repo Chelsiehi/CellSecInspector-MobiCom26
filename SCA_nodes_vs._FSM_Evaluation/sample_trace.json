@@ -1,0 +1,674 @@
+[
+  [
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMPLETE",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "EPS attach type": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "EPS attach type": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMPLETE",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "TAI": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "SERVICE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "EXTENDED SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "SERVICE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "CONTROL PLANE SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Device properties": "valid",
+        "NAS message container": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMPLETE",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "DETACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Detach type": "valid"
+      }
+    },
+    {
+      "MessageType": "DETACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "Detach type": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "TAI": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "DETACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Detach type": "valid"
+      }
+    },
+    {
+      "MessageType": "SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "EXTENDED SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "CONTROL PLANE SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Device properties": "valid",
+        "NAS message container": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMPLETE",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMPLETE",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "DETACH ACCEPT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS bearer context status": "valid",
+        "ESM message container": "valid",
+        "Detach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "SERVICE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "SECURITY MODE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "DETACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Detach type": "valid"
+      }
+    },
+    {
+      "MessageType": "PDN CONNECTIVITY REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "EXTENDED SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "CONTROL PLANE SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Device properties": "valid",
+        "NAS message container": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "CONTROL PLANE SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Device properties": "valid",
+        "NAS message container": "valid"
+      }
+    },
+    {
+      "MessageType": "SECURITY MODE COMMAND",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "Selected NAS security algorithms": "valid",
+        "HASHMME": "valid"
+      }
+    },
+    {
+      "MessageType": "CONTROL PLANE SERVICE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Device properties": "valid",
+        "NAS message container": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ROUTING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "ATTACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "ROUTING AREA UPDATE REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    },
+    {
+      "MessageType": "REGISTRATION REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "TAI": "valid"
+      }
+    }
+  ],
+  [
+    {
+      "MessageType": "ATTACH REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "EPS attach type": "valid"
+      }
+    },
+    {
+      "MessageType": "TRACKING AREA UPDATE REJECT",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EMM cause": "valid",
+        "Extended EMM cause": "valid",
+        "TAI": "valid"
+      }
+    },
+    {
+      "MessageType": "DETACH REQUEST",
+      "IEs": {
+        "NAS key set identifier": "valid",
+        "EPS mobile identity": "valid",
+        "UE network capability": "valid",
+        "Detach type": "valid"
+      }
+    }
+  ]
+]

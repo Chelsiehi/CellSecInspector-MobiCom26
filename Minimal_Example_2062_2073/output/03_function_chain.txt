@@ -1,0 +1,7 @@
+# Function chain report
+# Input: output/02_sca_nodes.txt
+
+==================== TEMPORAL CONNECTIONS ====================
+source_event_id	target_event_id	matched_state
+2062	2073	UE is in 5GMM-CONNECTED mode with RRC inactive indication.
+

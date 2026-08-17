@@ -1,0 +1,58 @@
+"Authentication: Ensures that only legitimate users, devices, and network entities can access services.",,
+,UE Authentication,Ensures that only authorized users can access the network
+,Network Entity Authentication,"Verifies the legitimacy of network nodes (eNodeB, gNodeB, AMF, SMF, etc.)"
+,Mutual Authentication,Guarantees two-way authentication between UE and the network to prevent man-in-the-middle attacks
+,SBA Authentication Binding,Enforces token-based authentication between SBA functions
+,Secure PLMN Selection,Protects against forced redirection to rogue or unauthorized PLMNs
+,Roaming & Inter-PLMN Security,Ensures consistent authentication policies across operators during roaming
+,,
+Authorization: Controls permissions and restricts operations to authorized entities only.,,
+,API & Service Access Control,Enforces strict authorization for APIs and service-based interfaces
+,Policy & QoS Rule Protection,"Prevents unauthorized modification of policies, QoS, or charging rules"
+,Edge Application Security,Ensures strong isolation between MEC applications
+,SBA API Security,Requires strong authorization and input validation for SBA REST APIs
+,Slice Isolation,"Ensures strict separation between 5G network slices (eMBB, URLLC, mMTC, etc.)"
+,Multi-Tenancy Isolation,Guarantees tenant isolation in SBA and MEC environments
+,Network Function Isolation,"Enforces logical separation between core network functions (AMF, SMF, UPF, etc.)"
+,,
+,,
+"Service Integrity: Guarantees that services, signaling, and data remain correct, unaltered, and trustworthy.",,
+,Message Integrity,Ensures signaling and data messages are not altered during transmission
+,Security Context Validation,Ensures NAS/RRC security contexts are established before sensitive exchanges
+,Secure Paging Mechanisms,Validates paging messages and prevents spoofed triggers
+,Secure Emergency Services,Ensures integrity-protected emergency registration and deregistration
+,,
+Service Confidentiality: Protects sensitive signaling and user data from unauthorized access or disclosure.,,
+,Data Encryption,Protects user data and signaling from interception
+,Service Confidentiality,Ensures sensitive information remains protected at all times
+,Integrity & Confidentiality Binding,Ensures both encryption and integrity protections are activated together
+,Secure Algorithm Negotiation,Prevents downgrades to weak ciphering or integrity algorithms
+,Session Key Update,Secures key re-derivation and renewal during mobility or context switches
+,Key Lifecycle Management,"Ensures secure generation, distribution, update, and revocation of cryptographic keys"
+,,
+"Privacy Protection: Prevents leakage of sensitive identifiers, location information, and other personal data.",,
+,Identifier Protection,"Ensures SUPI, SUCI, GUTI, and other permanent identifiers are never exposed in plaintext"
+,Location Privacy,"Protects against tracking through paging, TA updates, or broadcast messages"
+,Secure Paging Privacy,Prevents identity leakage during paging in multi-network environments
+,Privacy Protection Mechanisms,"Ensures slice, subscription, and policy data remain confidential"
+,,
+Network Availability & Signaling Security: Ensures the continuous availability and reliability of network services by protecting against attacks that disrupt connectivity or signaling procedures.,,
+,Denial-of-Service Resistance,Protects against resource exhaustion attacks
+,Signaling Flood Protection,Detects and mitigates signaling flood attacks
+,Rogue Base Station Detection,Identifies and blocks connections to fake eNodeBs/gNodeBs
+,Physical Layer Attack Protection,"Defends against RF jamming, replay, and signal spoofing attacks"
+,,
+"Interworking Security: Ensures secure and consistent behavior when UEs operate across different access technologies, network generations, and specification layers. ",,
+,Specification Downgrade Protection,Blocks fallback to insecure or legacy specifications
+,Cross-Specification Interaction Security,"Prevents vulnerabilities caused by NAS, RRC, SBA, and IP interactions"
+,Specification Compatibility,"Ensures secure, consistent behavior across 4G, 5G, NSA, and SA deployments"
+,,
+Threat Detection & Logging: Enables real-time anomaly detection.,,
+,Cross-Layer Threat Detection,"Monitors interactions across NAS, RRC, SBA, and user-plane layers"
+,Logging & Auditing ,"Maintains secure, tamper-proof logs"
+,Timer Behavior Verification,Validates specification timers to prevent exploitation
+,Counter Behavior Verification,"Ensure NAS/RRC/PDCP counters are strictly monotonic, unique, and correctly synchronized between UE and network. Detect and prevent counter wrap-around, reuse, or desynchronization."
+,,
+Regulatory Compliance: Ensures compliance with regulations and protects against fraud.,,
+,Regulatory Compliance,"Enforces lawful intercept, data protection, and privacy regulations"
+,Billing & Fraud Protection,Prevents manipulation of charging data and unauthorized resource usage
