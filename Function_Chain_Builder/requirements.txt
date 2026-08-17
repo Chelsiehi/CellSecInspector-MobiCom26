@@ -1,0 +1,4 @@
+torch
+transformers>=4.41.0
+openai>=1.30.0
+tqdm>=4.66.0

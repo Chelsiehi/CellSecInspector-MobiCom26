@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CellSecInspector: Automated 3GPP Specification Security Analysis</title>
+    <meta name="description" content="CellSecInspector automates security analysis of 3GPP specifications.">
+    <meta property="og:title" content="CellSecInspector">
+    <meta property="og:description" content="Safeguarding cellular networks via automated security analysis on specifications.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,700;6..12,800;6..12,900&display=swap">
+    <link rel="stylesheet" href="style.css?v=20260804-9">
+    <link rel="stylesheet" href="overrides.css?v=20260805-35">
+    <link rel="stylesheet" href="site-clean.css?v=20260805-28">
+  </head>
+  <body>
+    <header class="top-nav" aria-label="Primary navigation"><a class="brand" href="#top" aria-label="CellSecInspector home">CellSecInspector</a><nav class="page-nav" aria-label="Section navigation"><a href="#overview">Overview</a><a href="#system">Pipeline</a><a href="#findings">Examples</a></nav></header>
+
+    <header id="top" class="hero"><div class="container">
+      <h1>CellSecInspector</h1>
+      <p class="paper-title">Safeguarding Cellular Networks via Automated Security Analysis on Specifications</p>
+      <p class="venue">ACM MobiCom 2026</p>
+      <div class="link-row"><span class="button primary disabled">📄 Paper <small class="coming-badge">Coming Soon</small></span><a class="button" href="https://github.com/Chelsiehi/CellSecInspector-MobiCom26" target="_blank" rel="noopener">💻 Code ↗</a></div>
+    </div></header>
+
+    <main>
+      <section id="overview" class="section"><div class="container-wide">
+        <div class="section-heading"><p class="eyebrow">Overview</p><h2>Automated Security Analysis of Cellular Specifications</h2></div>
+        <div class="overview-grid"><article><strong>3 + 2</strong><span>Full Specifications + Selected Sections Analyzed</span></article><article><strong>9</strong><span>Foundational Security Properties</span></article><article><strong>43</strong><span>Confirmed Vulnerabilities</span></article><article><strong>7</strong><span>Previously Unreported Vulnerabilities</span></article></div>
+        <p class="overview-copy">CellSecInspector transforms complex 3GPP specifications into structured procedural representations, connects distributed behaviors into function chains, checks them against foundational security properties, and generates grounded test cases for expert validation.</p>
+        <!-- Why It Matters temporarily hidden. Keep this block for a future revision.
+        <div class="overview-why"><div class="section-heading"><p class="eyebrow">Why It Matters</p><h2>Design flaws in 3GPP specifications can create widespread threats with global negative impact</h2></div>
+        <div class="why-grid"><article><h3>The Challenge</h3><ul><li><i aria-hidden="true">🌐</i>Thousands of specifications are published by 3GPP to ensure global interoperability across mobile networks and devices.</li><li><i aria-hidden="true">📚</i>NAS and RRC specifications span thousands of pages, with intricate interdependencies and frequent updates across releases.</li><li><i aria-hidden="true">⏳</i>Traditional manual analysis by experts is slow, error-prone, and infeasible at scale.</li><li><i aria-hidden="true">⚙️</i>Existing automated approaches primarily rely on rule-based parsing, keyword-driven scanning, or manually crafted security requirements.</li><li><i aria-hidden="true">⚠️</i>Design flaws in 3GPP specifications can propagate into all compliant networks and devices, creating widespread threats with global negative impact.</li></ul></article><div class="why-arrow" aria-hidden="true"><b>→</b></div><article><h3>The CellSecInspector Approach</h3><ul><li><i aria-hidden="true">🧩</i>CellSecInspector models mobile network procedures using structured State–Condition–Action representations.</li><li><i aria-hidden="true">🧱</i>The SCA Representation Extractor converts specification text into self-contained procedural transitions.</li><li><i aria-hidden="true">🔗</i>The Function Chain Builder connects scattered SCA nodes across sentences, clauses, and explicit specification references.</li><li><i aria-hidden="true">🛡️</i>SecOracle systematically checks function chains against foundational security properties.</li><li><i aria-hidden="true">🧪</i>VulnTestGenerator automatically produces structured test cases for candidate violations.</li></ul></article></div></div> -->
+      </div></section>
+
+      <section id="system" class="section"><div class="container-wide">
+        <div class="section-heading method-heading pipeline-heading"><p class="eyebrow">Our Method</p><h2>CellSecInspector Pipeline</h2></div>
+        <figure class="figure-panel"><a href="assets/Overview.pdf" target="_blank" rel="noopener"><img src="assets/Overview.png" alt="Figure 1: CellSecInspector system overview, from 3GPP specifications to SCA nodes, function chains, security analysis, and test cases"></a></figure>
+        <div class="module-flow" id="module-flow"><button class="active" data-module="adapt"><b>SpecAdaptation</b><span>Retrieves release-specific 3GPP evidence to ground specification reasoning.</span></button><i>→</i><button data-module="sca"><b>SCA Representation Extractor</b><span>Extracts state, condition, action, and end-state evidence.</span></button><i>→</i><button data-module="chain"><b>Function Chain Builder</b><span>Connects scattered SCA nodes into complete procedures.</span></button><i>→</i><button data-module="oracle"><b>SecOracle</b><span>Checks nine properties under four adversarial actions.</span></button><i>→</i><button data-module="test"><b>VulnTestGenerator</b><span>Generates structured validation test cases.</span></button></div><article id="module-detail" class="module-detail"></article>
+        <div class="system-example"><div class="section-heading"><p class="eyebrow">A Violation Example</p><h2>Replay-Induced Service Integrity Violation</h2></div>
+        <div class="violation-tags" aria-label="Violation example summary"><span>Node 2073</span><span>Replay attack</span><strong>Service Integrity</strong></div>
+        <div class="segmented-control walkthrough-steps" role="tablist" aria-label="Analysis steps"><button class="active" data-step="source">Source</button><button data-step="sca">SCA Representation Extractor</button><button data-step="chain">Function Chain Builder</button><button data-step="oracle">SecOracle</button><button data-step="test">VulnTestGenerator</button></div>
+        <article id="walkthrough-panel" class="explorer-panel" aria-live="polite"></article></div>
+      </div></section>
+
+      <section id="findings" class="section"><div class="container-wide">
+        <div class="section-heading findings-heading"><p class="eyebrow">New Vulnerabilities</p><h2>Seven Previously Unreported Vulnerabilities</h2></div>
+        <div class="result-banner"><strong>43 vulnerabilities identified, including 7 previously unreported vulnerabilities.</strong></div>
+        <div class="spec-filter" role="group" aria-label="Filter findings by specification"><button data-spec="all" class="active">All · 7</button><button data-spec="TS 24.501">TS 24.501<br><small>5G NAS · 2 new · Full specification</small></button><button data-spec="TS 24.301">TS 24.301<br><small>4G NAS · 1 new · Full specification</small></button><button data-spec="TS 38.331">TS 38.331<br><small>5G RRC · 2 new · Full specification</small></button><button data-spec="TS 23.501">TS 23.501<br><small>5G System Architecture · 1 new · Selected section</small></button><button data-spec="TS 24.229">TS 24.229<br><small>IMS SIP/SDP · 1 new · Selected section</small></button></div>
+        <div id="findings-grid" class="findings-list"></div>
+        <aside class="disclosure"><p class="eyebrow">Responsible Disclosure</p><h3>New vulnerabilities were responsibly disclosed</h3><div class="disclosure-grid"><span>Android <b>Confirmed</b></span><span>Samsung <b>Disclosed</b></span><span>3GPP <b>Disclosed</b></span><span>GSMA Coordinated Vulnerability Disclosure (CVD) Program <b>Confirmed</b></span></div></aside>
+      </div></section>
+
+    </main>
+    <footer id="citation"><div class="container"><p><strong>CellSecInspector</strong> · MobiCom 2026.</p></div></footer>
+    <script src="data/content.js?v=20260805-2"></script><script src="site.js?v=20260805-30"></script>
+  </body>
+</html>
