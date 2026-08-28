@@ -1,6 +1,8 @@
 # CellSecInspector
 
-This is the official repository of the paper titled "CellSecInspector: Safeguarding Cellular Networks via Automated Security Analysis on Specifications" (ACM MobiCom '26).
+🌐 **Project Website:** Visit the [CellSecInspector project website](https://chelsiehi.github.io/CellSecInspector-MobiCom26/) for an overview of the system, its analysis pipeline, and key findings.
+
+This is the official repository of the paper titled **“CellSecInspector: Safeguarding Cellular Networks via Automated Security Analysis on Specifications”** (ACM MobiCom ’26).
 
 ## Pipeline Overview
 
