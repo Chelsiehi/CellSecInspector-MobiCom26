@@ -43,6 +43,13 @@ At a high level, the paper argues that SCA nodes preserve more of the protocol s
   - example initial model for ARCANE-style refinement
 - `sample_trace.json`
   - example traces used by the light ARCANE refinement script
+- `Expert_answer/`
+  - contains the expert-reviewed evaluation samples and paired Pass/Fail annotations used in Table 6
+  - includes SCA reference records for 4G NAS, 5G NAS, and 5G RRC
+  - includes paired annotations from two domain experts for CellSecInspector, Hermes, and ARCANE
+  - supports the acceptance-rate and inter-rater agreement calculations in Table 6(a)
+  - provides expert-reviewed reference data for evaluating extraction results produced by different language models in Table 6(b)
+  - contains a separate README describing the included files, formats, counts, and intended usage
 
 ## Why These Scripts Exist
 
