@@ -1,0 +1,350 @@
+Event ID: 1 (Derived from Section 4)
+Sentence: "4  General"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 2 (Derived from Section 4)
+Sentence: "----------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 3 (Derived from Section 4.1)
+Sentence: "4.1  Overview"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 4 (Derived from Section 4.1)
+Sentence: "-------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 5 (Derived from Section 4.1)
+Sentence: "The non-access stratum (NAS) described in the present document forms the highest stratum of the control plane between UE and MME at the radio interface (reference point "LTE-Uu"; see 3GPP S 23.401 [10])"
+Start State: UE and MME are not explicitly connected at the NAS level.
+Condition: UE needs to communicate with MME using NAS procedures over the LTE-Uu reference point.
+Action: Define NAS as the highest control plane layer and establish its role in UE-MME interaction at the LTE-Uu interface.
+End State: NAS is identified as the highest control plane stratum between UE and MME at the LTE-Uu interface.
+============================================================
+Event ID: 6 (Derived from Section 4.1)
+Sentence: "Main functions of the protocols that are part of the NAS are"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 7 (Derived from Section 4.1)
+Sentence: "- the support of mobility of the user equipment (UE); and"
+Start State: Not explicitly defined
+Condition: UE requires mobility support to maintain connectivity while moving across different cells or tracking areas.
+Action: NAS procedures are implemented to enable seamless mobility management, including tracking area updates, handovers, and registration updates.
+End State: UE mobility is supported, ensuring continuous connectivity and service availability during movement.
+============================================================
+Event ID: 8 (Derived from Section 4.1)
+Sentence: "- the support of session management procedures to establish and maintain IP connectivity between the UE and a packet data network gateway (PDN GW)"
+Start State: UE does not have active IP connectivity with the PDN GW.
+Condition: UE initiates a request for IP connectivity or requires maintenance of an existing connection.
+Action: Session management procedures are executed to establish or maintain IP connectivity between the UE and the PDN GW.
+End State: IP connectivity is successfully established or maintained between the UE and the PDN GW.
+============================================================
+Event ID: 9 (Derived from Section 4.1)
+Sentence: "NAS security is an additional function of the NAS providing services to the NAS protocols, e.g. integrity protection and ciphering of NAS signalling messages"
+Start State: NAS protocols are operational but without explicit security mechanisms applied.
+Condition: NAS signalling messages require protection to ensure confidentiality and integrity.
+Action: NAS security functions are activated, providing integrity protection and ciphering for NAS signalling messages.
+End State: NAS signalling messages are secured through integrity protection and ciphering, enhancing overall NAS protocol security.
+============================================================
+Event ID: 10 (Derived from Section 4.1)
+Sentence: "For the support of the above functions, the following procedures are supplied within this specification"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 11 (Derived from Section 4.1)
+Sentence: "- elementary procedures for EPS mobility management in clause 5; and"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 12 (Derived from Section 4.1)
+Sentence: "- elementary procedures for EPS session management in clause 6"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 13 (Derived from Section 4.1)
+Sentence: "Complete NAS transactions consist of specific sequences of elementary procedures. Examples of such specific sequences can be found in 3GPP S 23.401 [10]"
+Start State: Not explicitly defined
+Condition: NAS transaction initiation is required.
+Action: Execute specific sequences of elementary procedures as defined in 3GPP S 23.401 [10].
+End State: NAS transaction is completed successfully.
+============================================================
+Event ID: 14 (Derived from Section 4.1)
+Sentence: "The NAS for EPS follows the protocol architecture model for layer 3 as described in 3GPP S 24.007 [12]; however, due to the objective of EPS to provide the subscriber with a "ready-to-use" IP connectivity and an "always-on" experience, the protocol supports a linkage between mobility management and session management procedures during the attach procedure (see clause 4.2)"
+Start State: Not explicitly defined
+Condition: The need to provide "ready-to-use" IP connectivity and an "always-on" experience for the subscriber.
+Action: The NAS protocol supports a linkage between mobility management and session management procedures during the attach procedure.
+End State: Mobility management and session management procedures are linked, enabling seamless IP connectivity and an "always-on" experience for the subscriber.
+============================================================
+Event ID: 15 (Derived from Section 4.1)
+Sentence: "Signalling procedures for the control of NAS security are described as part of the EPS mobility management in clause 5. In addition to that, principles for the handing of EPS security contexts and for the activation of ciphering and integrity protection, when a NAS signalling connection is established, are provided in clause 4.4"
+Start State: Not explicitly defined
+Condition: A NAS signalling connection is established.
+Action: Principles for handling EPS security contexts and activating ciphering and integrity protection are applied.
+End State: NAS security is controlled, and EPS security contexts are managed with ciphering and integrity protection activated.
+============================================================
+Event ID: 16 (Derived from Section 4.2)
+Sentence: "4.2  Linkage between the protocols for EPS mobility management and EPS session management"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 17 (Derived from Section 4.2)
+Sentence: "-----------------------------------------------------------------------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 18 (Derived from Section 4.2)
+Sentence: "During the EPS attach procedure, the network can activate a default EPS bearer context (i.e. if the UE requests PDN connectivity in the attach request). Additionally, the network can activate one or several dedicated EPS bearer contexts in parallel for PDN connections of IP or Ethernet PDN type. To this purpose the EPS session management messages for the default EPS bearer context activation can be transmitted in an information element in the EPS mobility management messages. In this case, the UE and the network execute the attach procedure, the default EPS bearer context activation procedure, and the dedicated EPS bearer context activation procedure in parallel. The UE and network shall complete the combined default EPS bearer context activation procedure and the attach procedure before the dedicated EPS bearer context activation procedure is completed. If EMM-REGISTERED without PDN connection is not supported by the UE or the MME, then the success of the attach procedure is dependent on the success of the default EPS bearer context activation procedure. If the attach procedure fails, then the ESM procedures also fail"
+Start State: UE initiates the EPS attach procedure, and the network is ready to process the attach request.
+Condition: The UE requests PDN connectivity in the attach request, and the network supports the activation of default and dedicated EPS bearer contexts.
+Action: The network activates a default EPS bearer context and may activate one or several dedicated EPS bearer contexts in parallel. EPS session management messages for default EPS bearer context activation are transmitted within EPS mobility management messages. The UE and network execute the attach procedure, default EPS bearer context activation, and dedicated EPS bearer context activation in parallel. The combined default EPS bearer context activation and attach procedure must complete before the dedicated EPS bearer context activation is finalized. If EMM-REGISTERED without PDN connection is not supported, the attach procedure's success depends on the default EPS bearer context activation. If the attach procedure fails, the ESM procedures also fail.
+End State: The UE is attached to the network with a default EPS bearer context activated, and optionally, one or more dedicated EPS bearer contexts are activated. If the attach procedure fails, the UE remains detached, and no ESM procedures are completed.
+============================================================
+Event ID: 19 (Derived from Section 4.2)
+Sentence: "A UE using EPS services with control plane CIoT EPS optimization can initiate transport of user data via the control plane. For this purpose a UE in EMM-IDLE mode can initiate the service request procedure and transmit the ESM DATA TRANSPORT message in an information element in the CONTROL PLANE SERVICE REQUEST message"
+Start State: UE is in EMM-IDLE mode and is using EPS services with control plane CIoT EPS optimization.
+Condition: The UE needs to transport user data via the control plane.
+Action: The UE initiates the service request procedure and transmits the ESM DATA TRANSPORT message as an information element in the CONTROL PLANE SERVICE REQUEST message.
+End State: The UE successfully initiates the transport of user data via the control plane.
+============================================================
+Event ID: 20 (Derived from Section 4.2)
+Sentence: "Except for the attach procedure and the service request procedure, during EMM procedures the MME shall suspend the transmission of ESM messages. During the service request procedure the MME may suspend the transmission of ESM messages"
+Start State: EMM procedures are ongoing, and ESM messages are being transmitted.
+Condition: EMM procedures are initiated, excluding the attach procedure and the service request procedure. During the service request procedure, the MME evaluates whether to suspend ESM message transmission.
+Action: The MME suspends the transmission of ESM messages during EMM procedures (except for attach and service request procedures). During the service request procedure, the MME may optionally suspend ESM message transmission.
+End State: ESM message transmission is suspended during EMM procedures (except for attach and service request procedures). During the service request procedure, ESM message transmission may or may not be suspended based on MME decision.
+============================================================
+Event ID: 21 (Derived from Section 4.2)
+Sentence: "Except for the attach procedure and the service request procedure for UE initiated transport of user data via the control plane, during EMM procedures the UE shall suspend the transmission of ESM messages"
+Start State: UE is engaged in EMM procedures, and ESM messages may be in progress.
+Condition: EMM procedures are ongoing, excluding the attach procedure and the service request procedure for UE-initiated transport of user data via the control plane.
+Action: The UE suspends the transmission of ESM messages during the EMM procedures.
+End State: ESM message transmission is suspended until the EMM procedures are completed or the specified exceptions occur.
+============================================================
+Event ID: 22 (Derived from Section 4.2A)
+Sentence: "4.2A Handling of NAS signalling low priority indication"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 23 (Derived from Section 4.2A)
+Sentence: "--------------------------------------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 24 (Derived from Section 4.2)
+Sentence: "A UE configured for NAS signalling low priority (see 3GPP S 24.368 [15A], 3GPP S 31.102 [17]) indicates this by including the Device properties IE in the appropriate NAS message and setting the low priority indicator to "MS is configured for NAS signalling low priority", except for the following cases in which the UE shall set the low priority indicator to "MS is not configured for NAS signalling low priority""
+Start State: UE is configured for NAS signalling low priority or not, depending on its configuration.
+Condition: UE needs to send a NAS message and is configured for NAS signalling low priority.
+Action: UE includes the Device properties IE in the NAS message and sets the low priority indicator to "MS is configured for NAS signalling low priority", unless specific exceptions apply, in which case the UE sets the indicator to "MS is not configured for NAS signalling low priority".
+End State: The NAS message is sent with the appropriate low priority indicator set, reflecting the UE's configuration.
+============================================================
+Event ID: 25 (Derived from Section 4.2A)
+Sentence: "- the UE is performing an attach for emergency bearer services"
+Start State: UE is detached or not connected for emergency bearer services.
+Condition: UE initiates attach for emergency bearer services.
+Action: UE performs attach procedure specifically for emergency bearer service support.
+End State: UE becomes attached for emergency bearer services.
+============================================================
+Event ID: 26 (Derived from Section 4.2A)
+Sentence: "- the UE has a PDN connection for emergency bearer services established and is performing EPS mobility management procedures, or is establishing a PDN connection for emergency bearer services"
+Start State: The UE may or may not have an existing PDN connection for emergency bearer services.
+Condition: The UE requires emergency bearer services or is executing EPS mobility management procedures related to emergency services.
+Action: The UE either maintains its existing emergency PDN connection while performing EPS mobility management or initiates the establishment of a new emergency PDN connection.
+End State: A PDN connection for emergency bearer services is active, and the UE is performing or has completed related mobility management procedures.
+============================================================
+Event ID: 27 (Derived from Section 4.2A)
+Sentence: "- the UE configured for dual priority is requested by the upper layers to establish a PDN connection with the low priority indicator set to "MS is not configured for NAS signalling low priority""
+Start State: UE is configured for dual priority but has not yet initiated a PDN connection in response to upper-layer request.
+Condition: Upper layers request establishment of a PDN connection with the low priority indicator explicitly set to "MS is not configured for NAS signalling low priority."
+Action: The UE starts the PDN connection establishment procedure with the specified low priority indicator.
+End State: A PDN connection is established with the low priority indicator set to "MS is not configured for NAS signalling low priority."
+============================================================
+Event ID: 28 (Derived from Section 4.2A)
+Sentence: "- the UE configured for dual priority is performing EPS session management procedures related to the PDN connection established with low priority indicator set to "MS is not configured for NAS signalling low priority""
+Start State: UE is configured for dual priority and has an existing PDN connection with low priority indicator set to "MS is not configured for NAS signalling low priority."
+Condition: UE needs to perform session management procedures for this PDN connection.
+Action: UE executes EPS session management procedures while keeping the low priority indicator unchanged.
+End State: EPS session management procedures complete successfully, and the PDN connection remains active with the specified low priority indicator.
+============================================================
+Event ID: 29 (Derived from Section 4.2A)
+Sentence: "- the UE configured for dual priority has a PDN connection established by setting the low priority indicator to "MS is not configured for NAS signalling low priority" and is performing EPS mobility management procedures"
+Start State: UE is configured for dual priority and has a PDN connection with low priority indicator = "MS is not configured for NAS signalling low priority."
+Condition: The UE requires EPS mobility management procedures.
+Action: The UE performs EPS mobility management operations while maintaining the PDN connection with the specified low priority indicator.
+End State: EPS mobility management procedures continue with the existing PDN connection preserved.
+============================================================
+Event ID: 30 (Derived from Section 4.2A)
+Sentence: "- the UE is performing a service request procedure for a CS fallback emergency call or 1xCS fallback emergency call"
+Start State: UE is idle or in connected mode but requires an emergency call using CS fallback or 1xCS fallback.
+Condition: UE initiates the service request procedure for CS fallback emergency call or 1xCS fallback emergency call.
+Action: UE sends a SERVICE REQUEST to trigger CS fallback procedures.
+End State: CS fallback emergency call procedure is initiated, transitioning the UE towards CS domain connectivity.
+============================================================
+Event ID: 31 (Derived from Section 4.2A)
+Sentence: "- the UE is a UE configured to use AC11 15 in selected PLMN; or"
+Start State: UE has configuration settings that may include AC11–15 in the selected PLMN.
+Condition: The UE is operating in a PLMN where AC11–15 applies.
+Action: UE applies the AC11–15 configuration for its NAS-related procedures.
+End State: UE operates using AC11–15 configuration within the selected PLMN.
+============================================================
+Event ID: 32 (Derived from Section 4.2A)
+Sentence: "- the UE is responding to paging"
+Start State: UE is in idle or connected mode monitoring paging occasions.
+Condition: UE receives a paging message from the network.
+Action: UE responds to paging by initiating an appropriate NAS procedure (e.g., Service Request).
+End State: UE transitions to connected mode and becomes available for incoming signalling or user-plane activity.
+============================================================
+Event ID: 33 (Derived from Section 4.2A)
+Sentence: "The network may use the NAS signalling low priority indication for NAS level mobility management congestion control and APN based congestion control"
+Start State: Not explicitly defined.
+Condition: NAS-level or APN-level congestion is detected.
+Action: The network applies NAS signalling low priority indication to manage congestion control.
+End State: Congestion is mitigated through NAS signalling low priority handling.
+============================================================
+Event ID: 34 (Derived from Section 4.2A)
+Sentence: "If the NAS signalling low priority indication is provided in a PDN CONNECTIVITY REQUEST message, the MME stores the NAS signalling low priority indication within the default EPS bearer context activated due to the PDN connectivity request procedure"
+Start State: MME has received a PDN CONNECTIVITY REQUEST message.
+Condition: The request includes NAS signalling low priority indication.
+Action: MME stores the indication in the default EPS bearer context created during PDN connectivity establishment.
+End State: The default EPS bearer context contains the stored NAS signalling low priority indicator.
+============================================================
+Event ID: 35 (Derived from Section 4.3)
+Sentence: "4.3  UE mode of operation"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 36 (Derived from Section 4.3)
+Sentence: "-------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 37 (Derived from Section 4.3.1)
+Sentence: "4.3.1  General"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 38 (Derived from Section 4.3.1)
+Sentence: "--------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 39 (Derived from Section 4.3.1)
+Sentence: "A UE attached for EPS services shall operate in one of the following operation modes"
+Start State: Not explicitly defined
+Condition: UE is attached for EPS services
+Action: Define the operation modes in which the UE shall operate
+End State: UE is configured to operate in one of the specified operation modes
+============================================================
+Event ID: 40 (Derived from Section 4.3.1)
+Sentence: "- PS mode 1 of operation: the UE registers only to EPS services, and UE 's usage setting is "voice centric""
+Start State: UE is not registered to EPS services, and its usage setting is not explicitly defined.
+Condition: UE is configured to operate in PS mode 1 and has a usage setting of "voice centric."
+Action: The UE registers only to EPS services, aligning with its "voice centric" usage setting.
+End State: UE is successfully registered to EPS services, and its usage setting is confirmed as "voice centric."
+============================================================
+Event ID: 41 (Derived from Section 4.3.1)
+Sentence: "- PS mode 2 of operation: the UE registers only to EPS services, and UE 's usage setting is "data centric""
+Start State: UE is not registered to EPS services, and its usage setting is not explicitly defined.
+Condition: UE is configured to operate in PS mode 2 and has a "data centric" usage setting.
+Action: The UE registers only to EPS services as per its configuration in PS mode 2.
+End State: UE is registered to EPS services, and its usage setting is confirmed as "data centric."
+============================================================
+Event ID: 42 (Derived from Section 4.3.1)
+Sentence: "- CS/PS mode 1 of operation: the UE registers to both EPS and non-EPS services, and UE 's usage setting is "voice centric"; and"
+Start State: UE is not registered to EPS or non-EPS services.
+Condition: UE operates in CS/PS mode 1 and has a "voice centric" usage setting.
+Action: The UE initiates registration procedures to both EPS and non-EPS services.
+End State: UE is successfully registered to both EPS and non-EPS services, with its usage setting configured as "voice centric".
+============================================================
+Event ID: 43 (Derived from Section 4.3.1)
+Sentence: "- CS/PS mode 2 of operation: the UE registers to both EPS and non-EPS services, and UE 's usage setting is "data centric""
+Start State: UE is not registered to both EPS and non-EPS services, and its usage setting is not explicitly defined.
+Condition: UE operates in CS/PS mode 2 and has a "data centric" usage setting.
+Action: The UE performs registration procedures to both EPS (Evolved Packet System) and non-EPS services, aligning with its "data centric" usage setting.
+End State: UE is successfully registered to both EPS and non-EPS services, with its usage setting configured as "data centric".
+============================================================
+Event ID: 44 (Derived from Section 4.3.1)
+Sentence: "A UE configured to use CS fallback, shall operate in CS/PS mode 1 or CS/PS mode 2. Such UE may also be configured to use IMS, in which case the voice domain preference for E-UTRAN as defined in 3GPP S 24.167 [13B] shall be used for the selection of the domain for originating voice communication services"
+Start State: UE is configured to use CS fallback and may or may not be configured to use IMS.
+Condition: UE is configured to use CS fallback and may optionally be configured to use IMS.
+Action: UE operates in CS/PS mode 1 or CS/PS mode 2. If IMS is configured, the voice domain preference for E-UTRAN as defined in 3GPP S 24.167 [13B] is used for domain selection for originating voice communication services.
+End State: UE is operating in the appropriate CS/PS mode and, if IMS is configured, uses the specified voice domain preference for E-UTRAN.
+============================================================
+Event ID: 45 (Derived from Section 4.3.1)
+Sentence: "NOTE 1: The domain selected for originating voice communication services can be ignored by attempting a CS emergency call"
+Start State: The UE has selected a domain (e.g., IMS or CS) for originating voice communication services.
+Condition: The UE initiates a CS emergency call.
+Action: The UE ignores the previously selected domain for voice communication services and proceeds with the CS emergency call.
+End State: The CS emergency call is prioritized, and the domain selection for voice communication services is overridden.
+============================================================
+Event ID: 46 (Derived from Section 4.3.1)
+Sentence: "Upon request from upper layers to establish a CS emergency call"
+Start State: Not explicitly defined
+Condition: Request from upper layers to establish a CS emergency call
+Action: Initiate the NAS procedure to establish a CS emergency call
+End State: NAS procedure for CS emergency call establishment is initiated
+============================================================
+Event ID: 47 (Derived from Section 4.3.1)
+Sentence: "- if the UE needs to initiate a CS fallback emergency call but it is unable to perform CS fallback, the UE shall attempt to select GERAN or UTRAN radio access technology, and a UE with "IMS voice not available" should disable the E-UTRA capability (see clause 4.5) to allow a potential callback, and then progress the CS emergency call establishment"
+Start State: UE is in a state where it needs to initiate a CS fallback emergency call but cannot perform CS fallback.
+Condition: The UE is unable to perform CS fallback for an emergency call.
+Action: The UE attempts to select GERAN or UTRAN radio access technology. If the UE has "IMS voice not available," it disables the E-UTRA capability (as per clause 4.5) to allow a potential callback and proceeds with the CS emergency call establishment.
+End State: The UE has either successfully selected GERAN/UTRAN and progressed the CS emergency call establishment or is in a state where E-UTRA capability is disabled to facilitate a callback.
+============================================================
+Event ID: 48 (Derived from Section 4.3.1)
+Sentence: "- if the UE needs to initiate a 1xCS fallback emergency call but it is unable to perform 1xCS fallback, the UE shall attempt to select cdma2000 xae 1x radio access technology to establish the call"
+Start State: UE is in a state where it needs to initiate an emergency call but cannot perform 1xCS fallback.
+Condition: The UE needs to initiate a 1xCS fallback emergency call but is unable to perform 1xCS fallback.
+Action: The UE attempts to select cdma2000 xae 1x radio access technology to establish the emergency call.
+End State: The UE has attempted to establish the emergency call using cdma2000 xae 1x radio access technology.
+============================================================
+Event ID: 49 (Derived from Section 4.3.1)
+Sentence: "NOTE 2: Unable to perform CS fallback or 1xCS fallback means that either the UE was not allowed to attempt CS fallback or 1xCS fallback, or CS fallback or 1xCS fallback attempt failed"
+Start State: UE is in a state where CS fallback or 1xCS fallback is required or attempted.
+Condition: The UE is either not permitted to perform CS fallback or 1xCS fallback, or the attempt to perform CS fallback or 1xCS fallback fails.
+Action: The UE determines that CS fallback or 1xCS fallback cannot be executed due to restrictions or failure.
+End State: UE remains in the current state without transitioning to CS fallback or 1xCS fallback.
+============================================================
+Event ID: 50 (Derived from Section 4.3.1)
+Sentence: "A UE configured to use SMS over SGs shall operate in CS/PS mode 1 or CS/PS mode 2"
+Start State: UE is configured to use SMS over SGs but is not yet operating in a specific CS/PS mode.
+Condition: UE is configured to use SMS over SGs.
+Action: UE transitions to operate in either CS/PS mode 1 or CS/PS mode 2.
+End State: UE is operating in CS/PS mode 1 or CS/PS mode 2 to support SMS over SGs.
+============================================================

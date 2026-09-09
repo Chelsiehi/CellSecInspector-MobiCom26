@@ -1,0 +1,350 @@
+Event ID: 1 (Derived from Section 4)
+Sentence: "4 General"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 2 (Derived from Section 4)
+Sentence: "---------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 3 (Derived from Section 4.1)
+Sentence: "4.1 Overview"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 4 (Derived from Section 4.1)
+Sentence: "------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 5 (Derived from Section 4.1)
+Sentence: "The non-access stratum (NAS) described in the present document forms the highest stratum of the control plane between UE and AMF (reference point "N1" see 3GPPTS23.501[8]) for both 3GPP and non-3GPP access"
+Start State: UE and AMF are not explicitly connected at the NAS level.
+Condition: UE needs to communicate with AMF using NAS procedures.
+Action: Define NAS as the highest control plane layer and establish its role in UE-AMF interaction.
+End State: NAS is identified as the highest control plane stratum for both 3GPP and non-3GPP access.
+============================================================
+Event ID: 6 (Derived from Section 4.1)
+Sentence: "Main functions of the protocols that are part of the NAS are"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 7 (Derived from Section 4.1)
+Sentence: "- support of mobility of the user equipment (UE) including also common procedures such as authentication, identification, generic UE configuration update and security mode control procedures"
+Start State: UE is in an idle or connected state, potentially requiring mobility support or updates to its configuration or security context.
+Condition: UE initiates or requires mobility procedures, or the network triggers updates to the UE's configuration or security context.
+Action: Execute mobility-related procedures, including authentication, identification, generic UE configuration update, and security mode control procedures.
+End State: UE's mobility is supported, and its configuration and security context are updated as required.
+============================================================
+Event ID: 8 (Derived from Section 4.1)
+Sentence: "- support of session management procedures to establish and maintain data connectivity between the UE and the data network; and"
+Start State: UE is not connected to the data network.
+Condition: UE initiates a request for data connectivity or the network triggers a session management procedure.
+Action: Execute session management procedures to establish and maintain data connectivity between the UE and the data network.
+End State: Data connectivity is established and maintained between the UE and the data network.
+============================================================
+Event ID: 9 (Derived from Section 4.1)
+Sentence: "- NAS transport procedure to provide a transport of SMS, LPP, LCS, UE policy container, SOR transparent container and UE parameters update information payload"
+Start State: Not explicitly defined
+Condition: The UE or network requires the transport of specific payloads (SMS, LPP, LCS, UE policy container, SOR transparent container, or UE parameters update information) over NAS.
+Action: The NAS transport procedure is executed to encapsulate and deliver the specified payloads between the UE and the network.
+End State: The specified payloads are successfully transported over NAS, and the UE or network processes the received information accordingly.
+============================================================
+Event ID: 10 (Derived from Section 4.1)
+Sentence: "Principles for the handing of 5GS security contexts and for the activation of ciphering and integrity protection, when a NAS signalling connection is established, are provided in subclause4.4"
+Start State: Not explicitly defined
+Condition: Establishment of a NAS signalling connection between the UE and the network.
+Action: Principles for handling 5GS security contexts and activating ciphering and integrity protection are applied as specified in subclause 4.4.
+End State: 5GS security contexts are handled, and ciphering and integrity protection are activated for the NAS signalling connection.
+============================================================
+Event ID: 11 (Derived from Section 4.1)
+Sentence: "For the support of the above functions, the following procedures are supplied within this specification"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 12 (Derived from Section 4.1)
+Sentence: "- elementary procedures for 5GS mobility management in clause5; and"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 13 (Derived from Section 4.1)
+Sentence: "- elementary procedures for 5GS session management in clause6"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 14 (Derived from Section 4.1)
+Sentence: "Signalling procedures for the control of NAS security are described as part of the 5GMM common procedures in subclause5.4"
+Start State: Not explicitly defined
+Condition: NAS security control is required as part of 5GMM common procedures.
+Action: Describe signalling procedures for NAS security control in subclause 5.4.
+End State: NAS security control procedures are defined and integrated into 5GMM common procedures.
+============================================================
+Event ID: 15 (Derived from Section 4.1)
+Sentence: "Complete NAS transactions consist of specific sequences of elementary procedures. Examples of such specific sequences can be found in 3GPPTS23.502[9]"
+Start State: Not explicitly defined
+Condition: A NAS transaction is initiated, requiring the execution of multiple elementary procedures.
+Action: The NAS transaction is executed by following specific sequences of elementary procedures as defined in 3GPP TS 23.502 [9].
+End State: The NAS transaction is completed successfully, having executed all required elementary procedures in the specified sequence.
+============================================================
+Event ID: 16 (Derived from Section 4.1)
+Sentence: "The NAS for 5GS follows the protocol architecture model for layer3 as described in 3GPPTS24.007[11]"
+Start State: Not explicitly defined
+Condition: NAS for 5GS requires alignment with the protocol architecture model for layer3.
+Action: NAS for 5GS adopts the protocol architecture model for layer3 as specified in 3GPPTS24.007[11].
+End State: NAS for 5GS is aligned with the layer3 protocol architecture model.
+============================================================
+Event ID: 17 (Derived from Section 4.2)
+Sentence: "4.2 Coordination between the protocols for 5GS mobility management and 5GS session management"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 18 (Derived from Section 4.2)
+Sentence: "---------------------------------------------------------------------------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 19 (Derived from Section 4.2)
+Sentence: "A 5GS session management (5GSM) message is piggybacked in specific 5GS mobility management (5GMM) transport messages. To this purpose, the 5GSM messages can be transmitted in an information element in the 5GMM transport messages. In this case, the UE, the AMF and the SMF execute the 5GMM procedure and the 5GSM procedure in parallel. The success of the 5GMM procedure is not dependent on the success of the piggybacked 5GSM procedure"
+Start State: Not explicitly defined
+Condition: A 5GSM message needs to be transmitted alongside a 5GMM transport message.
+Action: The 5GSM message is piggybacked in an information element within the 5GMM transport message. The UE, AMF, and SMF execute the 5GMM and 5GSM procedures in parallel.
+End State: The 5GMM procedure completes independently of the success or failure of the piggybacked 5GSM procedure.
+============================================================
+Event ID: 20 (Derived from Section 4.2)
+Sentence: "The UE can only initiate the 5GSM procedure when there is a 5GMM context established at the UE"
+Start State: The UE does not have an established 5GMM context.
+Condition: A 5GMM context is established at the UE.
+Action: The UE initiates the 5GSM procedure.
+End State: The 5GSM procedure is initiated by the UE.
+============================================================
+Event ID: 21 (Derived from Section 4.2)
+Sentence: "During 5GMM procedures, the UE and the AMF shall suspend the transmission of 5GSM messages, except when"
+Start State: UE and AMF are engaged in 5GMM procedures, and 5GSM messages are being transmitted.
+Condition: The UE and AMF are performing 5GMM procedures.
+Action: The UE and AMF suspend the transmission of 5GSM messages, except under specific conditions (not specified in the sentence).
+End State: The transmission of 5GSM messages is suspended during 5GMM procedures, unless an exception applies.
+============================================================
+Event ID: 22 (Derived from Section 4.2)
+Sentence: "a) the 5GMM procedure is piggybacking 5GSM messages; or"
+Start State: Not explicitly defined
+Condition: The 5GMM procedure is initiated and requires the transmission of 5GSM messages.
+Action: The 5GMM procedure includes 5GSM messages within its signaling, effectively piggybacking them.
+End State: The 5GSM messages are successfully transmitted as part of the 5GMM procedure.
+============================================================
+Event ID: 23 (Derived from Section 4.2)
+Sentence: "b) the UE is in 5GMM-CONNECTED mode and a service request procedure for re-establishing user-plane resources of PDU session(s) is initiated without including PDU session status IE or Allowed PDU session status IE. In this case, the UE and the AMF need not suspend the transmission of 5GSM messages related to other PDU session(s) than the one(s) for which the user- plane resources re-establishment is requested"
+Start State: UE is in 5GMM-CONNECTED mode, and user-plane resources of one or more PDU sessions need re-establishment.
+Condition: A service request procedure is initiated for re-establishing user-plane resources of PDU session(s) without including PDU session status IE or Allowed PDU session status IE.
+Action: The UE and AMF proceed with the service request procedure without suspending the transmission of 5GSM messages related to other PDU sessions.
+End State: User-plane resources of the requested PDU session(s) are re-established, and 5GSM messages for other PDU sessions continue to be transmitted without interruption.
+============================================================
+Event ID: 24 (Derived from Section 4.2)
+Sentence: "If the UE determines to locally release the N1 NAS signalling connection upon receiving an SOR transparent container during a registration procedure as specified in 3GPP TS 23.122 [5] Annex C.2, the UE shall suspend the transmission of 5GSM messages after sending the REGISTRATION COMPLETE message and until the N1 NAS signalling connection is released to obtain service on a higher priority PLMN, with the exception of the case when the UE has an emergency PDU session"
+Start State: UE is in the process of a registration procedure and has an active N1 NAS signalling connection.
+Condition: UE receives an SOR transparent container during the registration procedure as specified in 3GPP TS 23.122 [5] Annex C.2.
+Action: UE determines to locally release the N1 NAS signalling connection, suspends the transmission of 5GSM messages after sending the REGISTRATION COMPLETE message, and waits until the N1 NAS signalling connection is released to obtain service on a higher priority PLMN. This action is not performed if the UE has an emergency PDU session.
+End State: N1 NAS signalling connection is locally released, and the UE suspends 5GSM message transmission until the connection is released, unless the UE has an emergency PDU session.
+============================================================
+Event ID: 25 (Derived from Section 4.2)
+Sentence: "A 5GMM message piggybacking a 5GSM message for a PDU session shall be delivered via the access associated with the PDU session, if any, with the following exceptions"
+Start State: Not explicitly defined
+Condition: A 5GMM message is piggybacking a 5GSM message for a PDU session.
+Action: The 5GMM message is delivered via the access associated with the PDU session, if such an access exists, unless specific exceptions apply.
+End State: The 5GMM message is delivered to the appropriate access, or exceptions are handled as per the specified rules.
+============================================================
+Event ID: 26 (Derived from Section 4.2)
+Sentence: "a) the AMF shall send, via 3GPP access, a DL NAS TRANSPORT message piggybacking a downlink 5GSM message of a network-requested 5GSM procedure for a PDU session associated with non-3GPP access if the conditions specified in subclause5.5.1.3.4 or subclause5.6.1.4 are met"
+Start State: The AMF is in a state where it needs to initiate a network-requested 5GSM procedure for a PDU session associated with non-3GPP access.
+Condition: The conditions specified in subclause 5.5.1.3.4 or subclause 5.6.1.4 are met.
+Action: The AMF sends, via 3GPP access, a DL NAS TRANSPORT message piggybacking a downlink 5GSM message for the network-requested 5GSM procedure.
+End State: The DL NAS TRANSPORT message containing the downlink 5GSM message is successfully sent to the UE via 3GPP access.
+============================================================
+Event ID: 27 (Derived from Section 4.2)
+Sentence: "b) the UE shall send an UL NAS TRANSPORT message piggybacking a response message to the 5GSM message described in a) via either"
+Start State: The UE has received a 5GSM message and needs to respond to it.
+Condition: The UE is required to send a response to the 5GSM message received in step a).
+Action: The UE sends an UL NAS TRANSPORT message, which includes the response message to the 5GSM message, via either 3GPP or non-3GPP access.
+End State: The response message is successfully transmitted to the network via the UL NAS TRANSPORT message.
+============================================================
+Event ID: 28 (Derived from Section 4.2)
+Sentence: "NOTE: The interaction between the 5GMM sublayer and the 5GSM sublayer to enable the UE to send the UL NAS TRANSPORT message containing the response message via 3GPP access is required. This is achieved via UE implementation"
+Start State: The UE has a response message that needs to be sent to the network via 3GPP access, but the 5GMM and 5GSM sublayers are not yet interacting to facilitate this.
+Condition: The UE needs to send a UL NAS TRANSPORT message containing a response message via 3GPP access.
+Action: The 5GMM sublayer interacts with the 5GSM sublayer to enable the UE to construct and send the UL NAS TRANSPORT message. This interaction is implemented within the UE.
+End State: The UL NAS TRANSPORT message containing the response message is successfully sent via 3GPP access.
+============================================================
+Event ID: 29 (Derived from Section 4.2)
+Sentence: "c) the UE shall send, via the target access, an UL NAS TRANSPORT message piggybacking a 5GSM message associated with a request type set to "existing PDU session" or "existing emergency PDU session" for handover of an existing PDU session between 3GPP access and non-3GPP access"
+Start State: The UE has an existing PDU session established and is undergoing a handover procedure between 3GPP access and non-3GPP access.
+Condition: The UE initiates a handover of an existing PDU session between 3GPP access and non-3GPP access.
+Action: The UE sends an UL NAS TRANSPORT message via the target access, piggybacking a 5GSM message with a request type set to "existing PDU session" or "existing emergency PDU session."
+End State: The UL NAS TRANSPORT message is successfully sent, and the handover procedure for the existing PDU session is initiated.
+============================================================
+Event ID: 30 (Derived from Section 4.2)
+Sentence: "A 5GMM message piggybacking a 5GSM message as a response message to a request message associated with an MA PDU session, shall be delivered via the same access that the initial message was received"
+Start State: Not explicitly defined
+Condition: A 5GMM message piggybacking a 5GSM message is generated as a response to a request message associated with an MA PDU session.
+Action: The 5GMM message (with the piggybacked 5GSM message) is delivered via the same access network that received the initial request message.
+End State: The response message is successfully delivered to the originating access network, maintaining consistency with the initial message's access path.
+============================================================
+Event ID: 31 (Derived from Section 4.3)
+Sentence: "4.3 UE domain selection"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 32 (Derived from Section 4.3)
+Sentence: "-----------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 33 (Derived from Section 4.3.1)
+Sentence: "4.3.1 UE's usage setting"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 34 (Derived from Section 4.3.1)
+Sentence: "------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 35 (Derived from Section 4.3.1)
+Sentence: "The UE's usage setting defined in 3GPPTS24.301[15] applies to voice capable UEs in 5GS and indicates whether the UE has preference for voice services over data services or vice-versa, where"
+Start State: Not explicitly defined
+Condition: The UE is voice-capable and operating in 5GS.
+Action: The UE's usage setting, as defined in 3GPP TS 24.301 [15], is applied to determine the UE's preference for voice services over data services or vice-versa.
+End State: The UE's preference for voice or data services is established based on its usage setting.
+============================================================
+Event ID: 36 (Derived from Section 4.3.1)
+Sentence: "a) voice services include IMS voice; and"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 37 (Derived from Section 4.3.1)
+Sentence: "b) data services include any kind of user data transfer without a voice media component"
+Start State: Not explicitly defined
+Condition: Data services are initiated or defined.
+Action: Define data services as any user data transfer that excludes a voice media component.
+End State: Data services are characterized by the absence of a voice media component.
+============================================================
+Event ID: 38 (Derived from Section 4.3.1)
+Sentence: "The UE's usage setting can be set to"
+Start State: Not explicitly defined
+Condition: The UE's usage setting needs to be configured or updated.
+Action: The UE's usage setting is set to a specific value (e.g., voice-centric, data-centric, or voice and data-centric) as per network requirements or user preferences.
+End State: The UE's usage setting is updated to the specified value, influencing subsequent NAS procedures and network behavior.
+============================================================
+Event ID: 39 (Derived from Section 4.3.1)
+Sentence: "a) "voice centric"; or"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 40 (Derived from Section 4.3.1)
+Sentence: "If the UE is capable of S1 mode, there is a single UE's usage setting at the UE which applies to both 5GS and EPS"
+Start State: Not explicitly defined
+Condition: The UE is capable of S1 mode.
+Action: The UE establishes a single usage setting that applies to both 5GS (5G System) and EPS (Evolved Packet System).
+End State: A unified UE usage setting is configured, applicable to both 5GS and EPS.
+============================================================
+Event ID: 41 (Derived from Section 4.3.2)
+Sentence: "4.3.2 Domain selection for UE originating sessions / calls"
+Start State: Not explicitly defined
+Condition: UE initiates a session or call and needs to select the appropriate domain (e.g., 5GS, EPS, or non-3GPP).
+Action: The UE performs domain selection based on configured policies, network capabilities, and UE preferences to determine the most suitable domain for the session or call.
+End State: The UE has selected the appropriate domain for the originating session or call.
+============================================================
+Event ID: 42 (Derived from Section 4.3.2)
+Sentence: "----------------------------------------------------------"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 43 (Derived from Section 4.3.2)
+Sentence: "The behaviour of the UE for domain selection is determined by"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 44 (Derived from Section 4.3.2)
+Sentence: "a) the UE usage setting"
+Start State: Not explicitly defined
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 45 (Derived from Section 4.3.2)
+Sentence: "b) the availability of IMS voice; and"
+Start State: Not explicitly defined
+Condition: The network determines the availability of IMS voice services.
+Action: The network evaluates and communicates the availability of IMS voice to the UE.
+End State: The UE is informed about the availability of IMS voice services.
+============================================================
+Event ID: 46 (Derived from Section 4.3.2)
+Sentence: "c) whether the UE operates in single-registration mode or dual-registration mode (see 3GPPTS23.501[8])"
+Start State: Not explicitly defined
+Condition: UE needs to determine its registration mode for NAS procedures.
+Action: Evaluate whether the UE operates in single-registration mode or dual-registration mode as specified in 3GPP TS 23.501 [8].
+End State: UE's registration mode (single or dual) is determined and applied for NAS operations.
+============================================================
+Event ID: 47 (Derived from Section 4.3.2)
+Sentence: "In the present document the condition "the UE supports IMS voice over 3GPP access" evaluates to "true" if at least one of the following is fulfilled"
+Start State: Not explicitly defined
+Condition: The UE's capability to support IMS voice over 3GPP access is being evaluated.
+Action: The condition is evaluated to "true" if at least one of the specified criteria is fulfilled.
+End State: The condition "the UE supports IMS voice over 3GPP access" is determined to be "true" or "false" based on the evaluation.
+============================================================
+Event ID: 48 (Derived from Section 4.3.2)
+Sentence: "In the present document the condition "the UE does not support IMS voice over 3GPP access" evaluates to "true" if the condition "the UE supports IMS voice over 3GPP access" evaluates to "false""
+Start State: Not explicitly defined
+Condition: The condition "the UE supports IMS voice over 3GPP access" evaluates to "false".
+Action: The condition "the UE does not support IMS voice over 3GPP access" is evaluated based on the negation of the condition "the UE supports IMS voice over 3GPP access".
+End State: The condition "the UE does not support IMS voice over 3GPP access" evaluates to "true".
+============================================================
+Event ID: 49 (Derived from Section 4.3.2)
+Sentence: "In the present document the condition "the UE supports IMS voice over non-3GPP access" evaluates to "true" if the UE supports IMS voice over non-3GPP access connected to 5GCN"
+Start State: Not explicitly defined
+Condition: The UE supports IMS voice over non-3GPP access connected to 5GCN.
+Action: Evaluate the condition "the UE supports IMS voice over non-3GPP access" as "true".
+End State: The condition is confirmed to be true, indicating the UE's capability to support IMS voice over non-3GPP access when connected to 5GCN.
+============================================================
+Event ID: 50 (Derived from Section 4.3.2)
+Sentence: "In the present document the condition "the UE does not support IMS voice over non-3GPP access" evaluates to "true" if the condition "the UE supports IMS voice over non-3GPP access" evaluates to "false""
+Start State: Not explicitly defined
+Condition: The condition "the UE supports IMS voice over non-3GPP access" evaluates to "false".
+Action: The condition "the UE does not support IMS voice over non-3GPP access" is evaluated based on the negation of the condition "the UE supports IMS voice over non-3GPP access".
+End State: The condition "the UE does not support IMS voice over non-3GPP access" is determined to be "true".
+============================================================
