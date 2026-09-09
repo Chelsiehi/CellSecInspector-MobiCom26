@@ -27,7 +27,7 @@ The three text files contain the expert-reviewed reference records used to evalu
 The CSV header is:
 
 ```csv
-erater_1,rater_2
+rater_1,rater_2
 ```
 Each subsequent row contains one pair of `Pass` or `Fail` judgments independently assigned by the two domain experts.
 
