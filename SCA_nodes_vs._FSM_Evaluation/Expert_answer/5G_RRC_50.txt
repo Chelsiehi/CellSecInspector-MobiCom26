@@ -1,0 +1,350 @@
+Event ID: 1 (Derived from Section 4.1)
+Sentence: "This specification is organised as follows:"
+Start State: Not applicable (document meta-statement)
+Condition: Not applicable (document meta-statement)
+Action: Not applicable (document meta-statement)
+End State: Not applicable (document meta-statement)
+============================================================
+Event ID: 2 (Derived from Section 4.1)
+Sentence: "a) clause 4.2 describes the RRC protocol model;"
+Start State: Not specified (Descriptive clause, not an event)
+Condition: Not applicable (Descriptive clause, not an event)
+Action: Not applicable (Descriptive clause, not an event)
+End State: Not applicable (Descriptive clause, not an event)
+============================================================
+Event ID: 3 (Derived from Section 4.1)
+Sentence: "b) clause 4.3 specifies the services provided to upper layers as well as the services expected from lower layers;"
+Start State: Not applicable (descriptive clause, not an RRC event).
+Condition: Not applicable (descriptive clause, not an RRC event).
+Action: Not applicable (descriptive clause, not an RRC event).
+End State: Not applicable (descriptive clause, not an RRC event).
+============================================================
+Event ID: 4 (Derived from Section 4.1)
+Sentence: "c) clause 4.4 lists the RRC functions;"
+Start State: Not specified (Context: Clause 4.4 is referenced but no explicit state is mentioned).
+Condition: Not specified (No triggering condition described in the sentence).
+Action: Clause 4.4 enumerates/describes RRC functions (e.g., broadcast, paging, mobility, etc.).
+End State: Not specified (No state transition or outcome implied).
+============================================================
+Event ID: 5 (Derived from Section 4.1)
+Sentence: "d) clause 5 specifies RRC procedures, including UE state transitions;"
+Start State: Not specified (general reference to RRC procedures)
+Condition: Not specified (descriptive clause, not an actionable event)
+Action: Clause 5 defines RRC procedures (including state transitions).
+End State: Not specified (no explicit transition described)
+============================================================
+Event ID: 6 (Derived from Section 4.1)
+Sentence: "e) clause 6 specifies the RRC messages in ASN.1 and description;"
+Start State: Not specified (Clause 6 is referenced but not an RRC state transition).
+Condition: Not specified (Descriptive clause, not an event-triggering condition).
+Action: Clause 6 defines RRC messages in ASN.1 format and provides descriptions.
+End State: Not specified (No state change; this is a metadata/definition clause).
+============================================================
+Event ID: 7 (Derived from Section 4.1)
+Sentence: "f) clause 7 specifies the variables (including protocol timers and constants) and counters to be used by the UE;"
+Start State: UE is operational and compliant with 3GPP TS 38.331.
+Condition: UE is configured to adhere to the protocol specifications (e.g., during initialization or reconfiguration).
+Action: UE reads and applies the variables, timers, constants, and counters defined in clause 7.
+End State: UE has updated its internal state with the specified protocol parameters.
+============================================================
+Event ID: 8 (Derived from Section 4.1)
+Sentence: "g) clause 8 specifies the encoding of the RRC messages;"
+Start State: Not applicable (descriptive clause, not an RRC event)
+Condition: Not applicable (descriptive clause, not an RRC event)
+Action: Specifies encoding rules for RRC messages (informational, not an action)
+End State: Not applicable (descriptive clause, not an RRC event)
+============================================================
+Event ID: 9 (Derived from Section 4.1)
+Sentence: "h) clause 9 specifies the specified and default radio configurations;"
+Start State: Not specified (or "UE/network is in a state where radio configurations are applicable")
+Condition: Clause 9 is referenced or radio configuration needs to be determined.
+Action: Clause 9 defines the specified and default radio configurations.
+End State: Radio configurations are established or updated as per the clause.
+============================================================
+Event ID: 10 (Derived from Section 4.1)
+Sentence: "i) clause 10 specifies generic error handling;"
+Start State: Not specified (or "UE/NW encounters an error condition")
+Condition: An error occurs during RRC procedures (unspecified type).
+Action: Generic error handling as defined in clause 10 is applied.
+End State: Error is processed (resolution depends on specific error type).
+============================================================
+Event ID: 11 (Derived from Section 4.1)
+Sentence: "j) clause 11 specifies the RRC messages transferred across network nodes;"
+Start State: Network nodes are operational and configured for RRC message exchange.
+Condition: RRC messages need to be transferred between network nodes (e.g., gNB, AMF, UE).
+Action: Clause 11 defines the format and procedures for RRC message transfer.
+End State: RRC messages are successfully transferred as per the specifications in clause 11.
+============================================================
+Event ID: 12 (Derived from Section 4.1)
+Sentence: "k) clause 12 specifies the UE capability related constraints and performance requirements."
+Start State: UE capabilities are not yet evaluated or configured.
+Condition: UE is required to comply with capability constraints (e.g., during capability transfer or reconfiguration).
+Action: Clause 12 defines UE capability constraints and performance requirements (e.g., supported bands, features).
+End State: UE capabilities are constrained/validated per the specified requirements.
+============================================================
+Event ID: 13 (Derived from Section 4.2.1)
+Sentence: "A UE is either in RRC_CONNECTED state or in RRC_INACTIVE state  when an RRC connection has been established."
+Start State: RRC connection is established (UE transitions from RRC_IDLE).
+Condition: UE has an active RRC connection (previously established via RRCSetupComplete or similar procedure).
+Action: Not applicable (descriptive statement about UE state post-connection).
+End State: UE is in either RRC_CONNECTED or RRC_INACTIVE state (depending on network configuration or inactivity timers).
+============================================================
+Event ID: 14 (Derived from Section 4.2.1)
+Sentence: "If this is not the case,   i.e. no RRC connection is established, the UE is in RRC_IDLE state."
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 15 (Derived from Section 4.2.1)
+Sentence: "The RRC states can further be characterised as follows:"
+Start State: Not applicable (descriptive statement, not an event)
+Condition: Not applicable (descriptive statement, not an event)
+Action: Not applicable (descriptive statement, not an event)
+End State: Not applicable (descriptive statement, not an event)
+============================================================
+Event ID: 16 (Derived from Section 4.2.1)
+Sentence: "a) RRC_IDLE:"
+Start State: UE is in RRC_IDLE state (implied by the label).
+Condition: Not specified (contextual or procedural details missing).
+Action: Not specified (no transition or event described).
+End State: Not specified (no state change indicated).
+============================================================
+Event ID: 17 (Derived from Section 4.2.1)
+Sentence: "b) A UE specific DRX may be configured by upper layers;"
+Start State: UE is in RRC_CONNECTED state with DRX not yet configured or reconfigured.
+Condition: Upper layers (e.g., NAS or RRC configuration) determine the need for UE-specific DRX.
+Action: Upper layers configure or reconfigure UE-specific DRX parameters (e.g., onDurationTimer, drx-InactivityTimer).
+End State: UE applies the new DRX configuration for power-saving operation in RRC_CONNECTED.
+============================================================
+Event ID: 18 (Derived from Section 4.2.1)
+Sentence: "c) An MBS broadcast specific DRX may be configured by upper layers;"
+Start State: UE is in RRC_CONNECTED or RRC_IDLE state (depending on MBS context).
+Condition: MBS (Multicast/Broadcast Service) is supported and upper layers (e.g., NAS or application layer) require DRX configuration for broadcast reception.
+Action: Upper layers (e.g., via RRC configuration) configure a broadcast-specific DRX cycle for MBS.
+End State: UE applies the MBS broadcast-specific DRX configuration for efficient power saving during MBS reception.
+============================================================
+Event ID: 19 (Derived from Section 4.2.1)
+Sentence: "d) UE controlled mobility based on network configuration;"
+Start State: UE is in RRC_CONNECTED state with configured mobility parameters.
+Condition: Network has provided mobility configuration (e.g., measurement gaps, thresholds, neighbor cell list).
+Action: UE autonomously evaluates mobility conditions (e.g., signal quality) and performs handover/beam switching based on network-configured rules.
+End State: UE maintains connectivity by transitioning to a new cell/beam while staying in RRC_CONNECTED.
+============================================================
+Event ID: 20 (Derived from Section 4.2.1)
+Sentence: "e)  The UE:"
+Start State: Not specified (context missing; likely part of a list or procedure step).
+Condition: Not specified (incomplete sentence or placeholder).
+Action: Not specified (expected UE behavior not described).
+End State: Not specified (depends on the subsequent actions).
+============================================================
+Event ID: 21 (Derived from Section 4.2.1)
+Sentence: "f) Monitors Short Messages transmitted with P-RNTI over DCI (see clause 6.5);"
+Start State: UE is in RRC_CONNECTED or RRC_IDLE state (depending on context).
+Condition: Network schedules a Short Message via P-RNTI (e.g., for system info updates, ETWS, or CMAS alerts).
+Action: UE monitors DCI (Downlink Control Information) scrambled by P-RNTI for Short Messages.
+End State: UE decodes the Short Message and acts accordingly (e.g., applies updates or alerts).
+============================================================
+Event ID: 22 (Derived from Section 4.2.1)
+Sentence: "g) Monitors a Paging channel for CN paging using 5G-S-TMSI;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: UE is configured to monitor Paging Occasions (POs) and has a valid 5G-S-TMSI assigned by the Core Network (CN).
+Action: UE decodes PDCCH/PDSCH for paging DCI and checks if the paging record matches its 5G-S-TMSI.
+End State: UE either detects a matching paging message (triggering further action) or continues monitoring.
+============================================================
+Event ID: 23 (Derived from Section 4.2.1)
+Sentence: "h) If configured by upper layers for MBS multicast reception,   monitors Paging channel for CN paging using TMGI;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: UE is configured by upper layers for MBS (Multicast/Broadcast Service) multicast reception.
+Action: UE monitors the Paging channel for Core Network (CN) paging using TMGI (Temporary Mobile Group Identity).
+End State: UE continues monitoring for paging until further action (e.g., receiving paging or leaving MBS group).
+============================================================
+Event ID: 24 (Derived from Section 4.2.1)
+Sentence: "i) Performs neighbouring cell measurements and cell (re-)selection;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: UE is camped on a serving cell and monitoring system information (e.g., SIBs) for measurement configurations.
+Action: UE measures neighbouring cells (RSRP/RSRQ/SINR) and evaluates cell (re-)selection criteria (e.g., ranking, thresholds).
+End State: UE may reselect to a better cell (if conditions met) or remain on the current cell.
+============================================================
+Event ID: 25 (Derived from Section 4.2.1)
+Sentence: "j) Acquires system information and can send SI request (if configured);"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: UE requires updated system information (SI) or is configured for on-demand SI request.
+Action: UE acquires broadcasted SI or sends an SI request (if on-demand SI is enabled).
+End State: UE has the necessary SI or has triggered an on-demand SI request procedure.
+============================================================
+Event ID: 26 (Derived from Section 4.2.1)
+Sentence: "k) Performs logging of available measurements together with location and time for logged measurement configured UEs;"
+Start State: UE is in RRC_IDLE state and configured for logged measurements (e.g., via `LoggedMeasurementConfiguration`).
+Condition: UE is triggered to log measurements (e.g., based on timer, event, or network command).
+Action: UE logs available measurements (e.g., RSRP, RSRQ) along with associated location (e.g., CGI, GNSS) and timestamp.
+End State: Measurements are stored in UE's internal log for later reporting (e.g., via `UEInformationResponse`).
+============================================================
+Event ID: 27 (Derived from Section 4.2.1)
+Sentence: "l) Performs idle/inactive measurements for idle/inactive measurement configured UEs;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: UE is configured with idle/inactive measurements (e.g., via SIBs or prior RRCRelease with measurement configurations).
+Action: UE performs measurements (e.g., serving cell, neighbor cells, or other radio conditions) as per configured parameters.
+End State: UE continues monitoring or stores measurements for potential cell reselection or reporting upon transition to RRC_CONNECTED.
+============================================================
+Event ID: 28 (Derived from Section 4.2.1)
+Sentence: "m) If configured by upper layers for MBS broadcast reception,   acquires MCCH change notification and MBS broadcast control information and data."
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 29 (Derived from Section 4.2.1)
+Sentence: "n) RRC_INACTIVE:"
+Start State: UE is in RRC_INACTIVE state (contextually derived from the section).
+Condition: Not specified (implied as a state description, not an event).
+Action: Not applicable (this is a state label, not an action-triggering event).
+End State: Not applicable (same as above).
+============================================================
+Event ID: 30 (Derived from Section 4.2.1)
+Sentence: "o) A UE specific DRX may be configured by upper layers or by RRC layer;"
+Start State: UE is in RRC_CONNECTED state with DRX not yet configured or reconfigured.
+Condition: Network or UE requires power-saving DRX configuration (e.g., based on traffic patterns or QoS).
+Action: Upper layers (e.g., NAS) or RRC layer (via RRCReconfiguration) configures UE-specific DRX parameters (e.g., onDurationTimer, drx-InactivityTimer).
+End State: UE applies the new DRX configuration for connected-mode power savings.
+============================================================
+Event ID: 31 (Derived from Section 4.2.1)
+Sentence: "p) UE controlled mobility based on network configuration;"
+Start State: UE is in RRC_CONNECTED state with active mobility measurements.
+Condition: Network has provided mobility configuration (e.g., measurement objects, thresholds, reporting criteria).
+Action: UE autonomously evaluates mobility conditions (e.g., signal quality, neighbor cells) and performs handover or cell reselection based on network-configured parameters.
+End State: UE completes mobility procedure (e.g., handover to target cell or reselection) while maintaining RRC connection.
+============================================================
+Event ID: 32 (Derived from Section 4.2.1)
+Sentence: "q) The UE stores the UE Inactive AS context;"
+Start State: UE is in RRC_INACTIVE state (or transitioning from RRC_CONNECTED to RRC_INACTIVE).
+Condition: UE has received an RRCRelease message with suspendConfig (or equivalent indication to suspend the RRC connection).
+Action: UE stores the Access Stratum (AS) context (including security, bearer configurations, etc.) for potential fast resume.
+End State: UE retains the AS context locally while in RRC_INACTIVE, enabling quick resumption if needed.
+============================================================
+Event ID: 33 (Derived from Section 4.2.1)
+Sentence: "r) A RAN-based notification area is configured by RRC layer;"
+Start State: UE is in RRC_CONNECTED state (implied for RRC configuration).
+Condition: Network decides to configure/update the RAN-based notification area (RNA) for UE mobility management (e.g., for RRC_INACTIVE state optimization).
+Action: RRC layer configures the RNA via dedicated signaling (e.g., RRCReconfiguration message).
+End State: RNA parameters are stored in the UE, enabling efficient paging/notification in RRC_INACTIVE state.
+============================================================
+Event ID: 34 (Derived from Section 4.2.1)
+Sentence: "s) Transfer of unicast data and/or signalling to/from UE over radio bearers configured for SDT;"
+Start State: UE is in RRC_INACTIVE state with SDT (Small Data Transmission) configured.
+Condition: UE has unicast data or signaling to transmit/receive, and radio bearers are pre-configured for SDT.
+Action: Data/signaling is transferred bidirectionally (UL/DL) over the pre-configured SDT radio bearers.
+End State: Unicast data/signaling is successfully transmitted/received without transitioning to RRC_CONNECTED.
+============================================================
+Event ID: 35 (Derived from Section 4.2.1)
+Sentence: "The UE:"
+Start State: Not specified (context missing)
+Condition: Not specified (incomplete sentence)
+Action: Not specified (no action described)
+End State: Not specified (incomplete event)
+============================================================
+Event ID: 36 (Derived from Section 4.2.1)
+Sentence: "t) Monitors Short Messages transmitted with P-RNTI over DCI (see clause 6.5);"
+Start State: UE is in RRC_CONNECTED or RRC_IDLE state (depending on context).
+Condition: Network schedules Short Messages via P-RNTI on DCI (Downlink Control Information).
+Action: UE monitors PDCCH for DCI scrambled with P-RNTI to decode Short Messages.
+End State: UE successfully receives and processes the Short Message (e.g., for system info updates, ETWS, or CMAS alerts).
+============================================================
+Event ID: 37 (Derived from Section 4.2.1)
+Sentence: "u) During SDT procedure,   monitors control channels associated with the shared data channel to determine if data is scheduled for it;"
+Start State: UE is engaged in SDT (Small Data Transmission) procedure.
+Condition: SDT procedure is ongoing.
+Action: UE monitors control channels (e.g., PDCCH) associated with the shared data channel (e.g., PDSCH/PUSCH).
+End State: UE determines whether data is scheduled for it (and acts accordingly, e.g., decoding data if scheduled).
+============================================================
+Event ID: 38 (Derived from Section 4.2.1)
+Sentence: "v)  While SDT procedure is not ongoing,   monitors a Paging channel for CN paging using 5G-S-TMSI and RAN paging using fullI-RNTI;"
+Start State: UE is in RRC_INACTIVE state.
+Condition: SDT (Small Data Transmission) procedure is **not** ongoing.
+Action: UE monitors Paging channel for:
+End State: UE remains in RRC_INACTIVE until paging or other triggers (e.g., SDT initiation, state transition).
+============================================================
+Event ID: 39 (Derived from Section 4.2.1)
+Sentence: "w)  If configured by upper layers for MBS multicast reception,   monitors Paging channel for paging using TMGI;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: Upper layers configure the UE for MBS (Multicast/Broadcast Service) multicast reception.
+Action: UE monitors the Paging channel for paging messages associated with the TMGI (Temporary Mobile Group Identity).
+End State: UE remains in the same RRC state but actively monitors for MBS-related paging.
+============================================================
+Event ID: 40 (Derived from Section 4.2.1)
+Sentence: "x)  Performs neighbouring cell measurements and cell (re-)selection;"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 41 (Derived from Section 4.2.1)
+Sentence: "y)  Performs RAN-based notification area updates periodically and  when moving outside the configured RAN-based notification area;"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 42 (Derived from Section 4.2.1)
+Sentence: "z)  Acquires system information, while SDT procedure is not ongoing,  and  can send SI request (if configured);"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state.
+Condition: The UE determines it needs to refresh its System Information (and SI‑Request capability is enabled).
+Action: The UE sends a System Information Request to the network and acquires the System Information.
+End State: The UE holds the newly acquired System Information. The SDT procedure remains idle.
+============================================================
+Event ID: 43 (Derived from Section 4.2.1)
+Sentence: "a)  While SDT procedure is not ongoing, performs logging of available measurements together with location and time for logged measurement configured UEs;"
+Start State: UE is in RRC_IDLE or RRC_INACTIVE state with logged measurement configuration.
+Condition: SDT (Small Data Transmission) procedure is **not** ongoing.
+Action: UE logs available measurements (e.g., RSRP, RSRQ), along with associated location (if available) and timestamp.
+End State: Measurements are stored in UE's log for later reporting (e.g., via UEInformationResponse).
+============================================================
+Event ID: 44 (Derived from Section 4.2.1)
+Sentence: "b)  While SDT procedure is not ongoing, performs idle/inactive measurements for idle/inactive measurement configured UEs;"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 45 (Derived from Section 4.2.1)
+Sentence: "c)  If configured by upper layers for MBS broadcast reception, acquires MCCH change notification and MBS broadcast control information and data."
+Start State: UE is in RRC_CONNECTED or RRC_IDLE state with MBS broadcast reception capability.
+Condition: Upper layers configure the UE for MBS (Multicast/Broadcast Service) broadcast reception.
+Action: UE acquires:
+End State: UE successfully receives MBS broadcast data and monitors MCCH for updates.
+============================================================
+Event ID: 46 (Derived from Section 4.2.1)
+Sentence: "d) RRC_CONNECTED:"
+Start State: UE is in an active RRC state (e.g., after successful connection setup).
+Condition: UE has completed RRC connection establishment or reconfiguration.
+Action: Not specified (this is a state declaration, not an event).
+End State: UE remains in RRC_CONNECTED until transition to another state (e.g., RRC_IDLE or RRC_INACTIVE).
+============================================================
+Event ID: 47 (Derived from Section 4.2.1)
+Sentence: "e) The UE stores the AS context;"
+Start State: UE has received an RRCRelease message with suspendConfig (or equivalent AS context preservation command).
+Condition: UE is in RRC_CONNECTED state and is instructed to suspend the RRC connection.
+Action: UE stores the current AS context (security, bearer configurations, etc.) for possible fast resume.
+End State: UE transitions to RRC_INACTIVE or RRC_IDLE (depending on the command) with AS context stored.
+============================================================
+Event ID: 48 (Derived from Section 4.2.1)
+Sentence: "f)  Transfer of unicast data to/from UE;"
+Start State: Not specified
+Condition: Not specified
+Action: Not specified
+End State: Not specified
+============================================================
+Event ID: 49 (Derived from Section 4.2.1)
+Sentence: "g)  Transfer of MBS multicast data to UE;"
+Start State: UE is in RRC_CONNECTED state and has joined an MBS session.
+Condition: Network has MBS multicast data available for the UE's subscribed service.
+Action: Network transmits MBS multicast data over the established MBS bearer.
+End State: UE successfully receives and processes the MBS multicast data.
+============================================================
+Event ID: 50 (Derived from Section 4.2.1)
+Sentence: "h)  At lower layers,  the UE may be configured with a UE specific DRX;"
+Start State: UE is in RRC_CONNECTED state with DRX configuration not yet applied.
+Condition: Network decides to configure UE-specific DRX for power saving or scheduling optimization.
+Action: Network configures UE with UE-specific DRX parameters via RRC signaling (e.g., `drx-Config` in `MAC-CellGroupConfig`).
+End State: UE applies the DRX configuration at lower layers (MAC), enabling discontinuous reception.
+============================================================
