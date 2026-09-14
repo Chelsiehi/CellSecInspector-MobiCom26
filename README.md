@@ -127,10 +127,10 @@ The following table summarizes newly identified vulnerabilities discovered by **
 
 We have responsibly disclosed all newly identified vulnerabilities to the following major stakeholders:
 
-- **Android — ✅ confirmed the reported issues**  
-- Samsung  
-- 3GPP  
-- **the GSMA Coordinated Vulnerability Disclosure (CVD) program  — ✅ confirmed the reported issues** 
+- **Android — ✅ confirmed the reported issues**
+- Samsung
+- 3GPP
+- **[GSMA Coordinated Vulnerability Disclosure (CVD) Programme](https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/) — ✅ acknowledged our security research**
 
 Details of vulnerability confirmation and remediation will be updated later.
 
