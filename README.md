@@ -130,7 +130,7 @@ We have responsibly disclosed all newly identified vulnerabilities to the follow
 - **Android — ✅ confirmed the reported issues**
 - Samsung
 - 3GPP
-- **[GSMA Coordinated Vulnerability Disclosure (CVD) Programme](https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/) — ✅ acknowledged our security research**
+- **[GSMA Coordinated Vulnerability Disclosure (CVD) Programme](https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/) — ✅ acknowledged our security research (CVD-2026-0120)**
 
 Details of vulnerability confirmation and remediation will be updated later.
 
