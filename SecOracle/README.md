@@ -8,6 +8,11 @@
 - `security_analysis_results_rrc.md`: example/generated RRC analysis output
 - `security_analysis_results_23.501.md`: example/generated TS 23.501 analysis output
 - `security_analysis_results_24.229.md`: example/generated TS 24.229 analysis output
+- [`confirmed vulnerabilities_4g.txt`](<./confirmed vulnerabilities_4g.txt>): confirmed vulnerability traces
+- [`confirmed vulnerabilities_5g.txt`](<./confirmed vulnerabilities_5g.txt>): confirmed vulnerability traces
+- [`confirmed vulnerabilities_rrc.txt`](<./confirmed vulnerabilities_rrc.txt>): confirmed vulnerability traces
+- [`confirmed vulnerabilities_23.501.txt`](<./confirmed vulnerabilities_23.501.txt>): confirmed vulnerability traces
+- [`confirmed vulnerabilities_24.229.txt`](<./confirmed vulnerabilities_24.229.txt>): confirmed vulnerability traces
 
 ## What The Script Does
 
