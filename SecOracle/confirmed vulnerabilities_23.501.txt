@@ -1,0 +1,3 @@
+| Start Node | End Node | Attack | Vulnerability Type | Vulnerability Name |
+|------------|----------|--------|--------------------|--------------------|
+| 8350 | 8357 | Modify | New Vulnerability | Vulnerable DNS-Based PLMN Discovery over Non-3GPP Access |

@@ -1,0 +1,64 @@
+| Start Node | End Node | Attack | Vulnerability Type | Vulnerability Name |
+|------------|----------|--------|--------------------|--------------------|
+| 3778 | 3915 | Modify | New Vulnerability | Exploitable CS-Fallback Initiation |
+| 3176 | 1148 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2089 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2089 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2443 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2443 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2443 | Replay | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 3174 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 3174 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 3174 | Replay | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 1148 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2089 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2089 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2089 | Replay | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2443 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2443 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 2443 | Replay | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 3174 | Inject | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3625 | 3174 | Modify | Known Vulnerability | Downgrade to Non-LTE Network Services |
+| 3176 | 2089 | Inject | Known Vulnerability | Denying All Network Services |
+| 3176 | 2443 | Replay | Known Vulnerability | Denying All Network Services |
+| 3176 | 3174 | Inject | Known Vulnerability | Denying All Network Services |
+| 3176 | 3623 | Modify | Known Vulnerability | Denying All Network Services |
+| 3176 | 4016 | Inject | Known Vulnerability | Denying All Network Services |
+| 3625 | 2089 | Inject | Known Vulnerability | Denying All Network Services |
+| 3625 | 2443 | Modify | Known Vulnerability | Denying All Network Services |
+| 3625 | 3623 | Replay | Known Vulnerability | Denying All Network Services |
+| 713 | 1805 | Inject | Known Vulnerability | Denying Selected Service |
+| 804 | 2297 | Modify | Known Vulnerability | Denying Selected Service |
+| 4761 | 4860 | Inject | Known Vulnerability | Signaling DoS |
+| 4761 | 4860 | Modify | Known Vulnerability | Signaling DoS |
+| 4821 | 4860 | Inject | Known Vulnerability | Signaling DoS |
+| 4821 | 4860 | Modify | Known Vulnerability | Signaling DoS |
+| 4821 | 4860 | Replay | Known Vulnerability | Signaling DoS |
+| 1260 | 897 | Inject | Known Vulnerability | S-TMSI Catching |
+| 1260 | 897 | Modify | Known Vulnerability | S-TMSI Catching |
+| 1224 | 1688 | Modify | Known Vulnerability | IMSI Catching |
+| 3775 | 4163 | Inject | Known Vulnerability | EMM Information Attack |
+| 804 | 2297 | Modify | Known Vulnerability | Impersonation Attack |
+| 1478 | 591 | Inject | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 591 | Modify | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 591 | Replay | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 599 | Inject | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 599 | Drop | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 599 | Modify | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 599 | Replay | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 600 | Inject | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 600 | Modify | Known Vulnerability | Synchronization Failure Attack |
+| 1478 | 600 | Replay | Known Vulnerability | Synchronization Failure Attack |
+| 1224 | 1688 | Modify | Known Vulnerability | Malformed Identity Request |
+| 2091 | 1148 | Modify | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 2091 | 2089 | Replay | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 3125 | 2201 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 1478 | 591 | Inject | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 1478 | 599 | Modify | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 1478 | 600 | Replay | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 353 | 806 | Inject | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 2554 | 591 | Replay | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 4125 | 678 | Modify | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 4018 | 2089 | Inject | Known Vulnerability | SERVICE REJECT Attack |
+| 4018 | 2443 | Modify | Known Vulnerability | SERVICE REJECT Attack |
+| 4018 | 3623 | Replay | Known Vulnerability | SERVICE REJECT Attack |

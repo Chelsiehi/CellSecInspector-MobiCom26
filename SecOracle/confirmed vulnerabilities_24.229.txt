@@ -1,0 +1,11 @@
+New Vulnerability names: 1
+Known Vulnerability names: 0
+Total vulnerability names: 1
+New Vulnerability candidate violations: 1
+Known Vulnerability candidate violations: 0
+Total candidate violations after deduplication: 1
+Deduplication key: Start Node + End Node + Attack + Vulnerability Type + Vulnerability Name
+
+| Start Node | End Node | Attack | Vulnerability Type | Vulnerability Name |
+|------------|----------|--------|--------------------|--------------------|
+| 102 | 105 | Modify | New Vulnerability | Privacy Exposure via Over-Disclosed VoIMS Signaling Headers |

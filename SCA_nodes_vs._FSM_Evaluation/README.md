@@ -64,52 +64,136 @@ Prior work typically builds FSMs first and then performs downstream analysis. In
 This directory supports that representation-level evaluation workflow.
 
 
-## Usage Overview
+## Running Hermes and ARCANE
 
-### Generate ARCANE-style inputs from raw specification text
-
-```bash
-python3 generate_inputs_from_spec.py --help
-```
-
-Typical use:
+Run the commands below from this directory unless stated otherwise:
 
 ```bash
-python3 generate_inputs_from_spec.py \
-  --input /path/to/spec.txt \
-  --initial-model ./initial_model.json \
-  --sample-trace ./sample_trace.json
+cd SCA_nodes_vs._FSM_Evaluation
 ```
 
-### Run Hermes four-field conversion and completeness counting
+The three helper scripts support `--help`:
 
 ```bash
 python3 hermes_4fields.py --help
-```
-
-Typical use:
-
-```bash
-python3 hermes_4fields.py \
-  --raw-spec /path/to/spec.txt \
-  --name ts24501_clause4 \
-  --out-dir ./outputs
-```
-
-Important:
-This script depends on an external Hermes/NEUTREX environment and expects local paths to those repositories and Python environments. The defaults in the script reflect the original experiment environment and may need to be changed on a new machine.
-
-### Run lightweight ARCANE refinement
-
-```bash
+python3 generate_inputs_from_spec.py --help
 python3 run_arcane_light.py --help
 ```
 
-Typical use:
+### Run Hermes
+
+#### Prerequisites
+
+`hermes_4fields.py` is a wrapper around an external Hermes/NEUTREX installation. It does not install Hermes or download its trained models. Before running it, prepare:
+
+1. A Hermes repository containing:
+   - `neutrex/xml_to_tree/conversion.py`
+   - `neutrex/tree_to_xml/tree_to_xml.py`
+   - `neutrex/tree_to_xml/tree_cleanup.py`
+2. A model repository containing:
+   - `neutrex/model_5g_nas`
+   - `neutrex/saved_model`
+3. A Python interpreter from the Hermes/NEUTREX environment with its dependencies, including `supar`.
+4. A plain-text specification input. Non-empty lines are passed to Hermes as labeling units, so sentence- or procedure-level lines work best.
+
+The Hermes repository and model repository may be the same checkout. Pass explicit paths because the defaults in the script refer to the machine used for the original experiment.
+
+#### Command
 
 ```bash
+mkdir -p outputs/hermes
+
+python3 hermes_4fields.py \
+  --raw-spec /absolute/path/to/spec.txt \
+  --name ts24501_clause4 \
+  --out-dir ./outputs/hermes \
+  --hermes-repo /absolute/path/to/hermes-spec-to-fsm-main \
+  --model-repo /absolute/path/to/hermes-spec-to-fsm-main \
+  --python-bin /absolute/path/to/hermes-spec-to-fsm-main/neutrex/.venv/bin/python
+```
+
+The wrapper performs three stages:
+
+1. converts the plain-text input to Hermes `.pid` input;
+2. runs the NEUTREX `supar.cmds.crf_con` predictor;
+3. converts predictions to labeled text, maps them to `start`, `condition`, `action`, and `end`, and counts how many of those four fields are valid.
+
+For `--name ts24501_clause4`, the output directory contains:
+
+- `hermes_labeled_lines_ts24501_clause4.txt`: raw Hermes labeled lines;
+- `hermes_labeled_transitions_ts24501_clause4.xml`: normalized four-field transitions;
+- `hermes_field_stats_ts24501_clause4.json`: completeness distribution and per-event details.
+
+The JSON `distribution` object reports the number of events containing 0, 1, 2, 3, or 4 valid fields. Empty values and placeholders such as `unknown`, `N/A`, and `not specified` are treated as invalid.
+
+#### Hermes troubleshooting
+
+- `conversion.py` or `tree_to_xml.py` not found: verify `--hermes-repo` points to the repository root, not its `neutrex` subdirectory.
+- Model or BERT path not found: verify `--model-repo/neutrex/model_5g_nas` and `--model-repo/neutrex/saved_model` exist.
+- `No module named supar`: use the NEUTREX virtual-environment interpreter for `--python-bin`.
+- CUDA/device error: the current wrapper passes `-d 0` to NEUTREX, selecting device 0. Use a Hermes environment with an available compatible device, or adjust that argument in `hermes_4fields.py` for a CPU-only installation.
+- A subprocess failure stops the wrapper immediately and preserves its command error, which is normally the most useful diagnostic.
+
+### Run lightweight ARCANE
+
+The lightweight ARCANE workflow uses only the Python standard library; it does not require the original ARCANE repository, NetworkX, or Matplotlib. It has two stages: generate JSON inputs and refine the model.
+
+#### Quick run with the included examples
+
+```bash
+mkdir -p outputs/arcane
+
 python3 run_arcane_light.py \
   --initial-model ./initial_model.json \
   --sample-trace ./sample_trace.json \
-  --output-dot ./arcane_light.dot
+  --output-dot ./outputs/arcane/arcane_light.dot
 ```
+
+The command prints the initial and refined state/transition counts and writes a Graphviz DOT file.
+
+#### Generate ARCANE inputs from a specification
+
+The input generator extracts message-like names from plain text, builds a small initial model, and creates representative message traces:
+
+```bash
+mkdir -p outputs/arcane
+
+python3 generate_inputs_from_spec.py \
+  --spec-file /absolute/path/to/spec.txt \
+  --initial-out ./outputs/arcane/initial_model.json \
+  --trace-out ./outputs/arcane/sample_trace.json
+```
+
+The generated files have the following roles:
+
+- `initial_model.json`: states and message-labeled transitions used as the base model;
+- `sample_trace.json`: lists of observed messages and information elements to merge into the model.
+
+The generator uses common NAS procedure patterns when available and falls back to message sequences found in specification paragraphs. Review generated JSON before using it for a paper result because message extraction is heuristic.
+
+#### Refine the generated model
+
+```bash
+python3 run_arcane_light.py \
+  --initial-model ./outputs/arcane/initial_model.json \
+  --sample-trace ./outputs/arcane/sample_trace.json \
+  --output-dot ./outputs/arcane/arcane_light.dot \
+  --threshold 0.7 \
+  --alpha 0.6
+```
+
+`--threshold` controls when an observed trace message is merged with an existing transition; a higher value requires a closer match. `--alpha` controls the similarity balance between message type and information elements: higher values give more weight to the message type. Their defaults are `0.7` and `0.6`, respectively.
+
+If Graphviz is installed, render the resulting graph with:
+
+```bash
+dot -Tpng ./outputs/arcane/arcane_light.dot \
+  -o ./outputs/arcane/arcane_light.png
+```
+
+#### ARCANE troubleshooting
+
+- `FileNotFoundError`: check the paths passed to `--initial-model` and `--sample-trace` and create the output directory before running.
+- JSON decoding error: validate that the initial model and trace files contain valid JSON. The included files show the expected schemas.
+- Empty or very small generated traces: provide specification text containing explicit message names such as `REQUEST`, `ACCEPT`, `REJECT`, `COMMAND`, `COMPLETE`, `FAILURE`, or `INDICATION`.
+- Unexpectedly many new states: increase `--threshold` only if you want stricter merging; decrease it to merge more observed messages with existing transitions. Adjust `--alpha` when message names and information-element similarity disagree.

@@ -1,0 +1,163 @@
+| Start Node | End Node | Attack | Vulnerability Type | Vulnerability Name |
+|------------|----------|--------|--------------------|--------------------|
+| 47 | 42 | Inject | New Vulnerability | Access Trap via Access Barring Factor |
+| 2055 | 1715 | Inject | New Vulnerability | Rogue Base Station RRC RESUME Blackhole |
+| 2055 | 1715 | Drop | New Vulnerability | Rogue Base Station RRC RESUME Blackhole |
+| 32 | 64 | Drop | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 32 | 64 | Modify | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 126 | 124 | Drop | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 126 | 124 | Modify | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 127 | 124 | Inject | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 127 | 124 | Modify | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 128 | 124 | Inject | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 129 | 124 | Inject | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 129 | 124 | Drop | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 129 | 124 | Modify | Known Vulnerability | Denial-of-Service with RRCSetupRequest |
+| 239 | 245 | Modify | Known Vulnerability | Installing Null Cipher and Null Integrity |
+| 248 | 245 | Modify | Known Vulnerability | Installing Null Cipher and Null Integrity |
+| 231 | 225 | Inject | Known Vulnerability | Installing Null Cipher and Null Integrity |
+| 257 | 255 | Inject | Known Vulnerability | Installing Null Cipher and Null Integrity |
+| 13 | 47 | Inject | Known Vulnerability | Lullaby Attack |
+| 13 | 47 | Modify | Known Vulnerability | Lullaby Attack |
+| 13 | 47 | Replay | Known Vulnerability | Lullaby Attack |
+| 13 | 64 | Inject | Known Vulnerability | Lullaby Attack |
+| 13 | 64 | Drop | Known Vulnerability | Lullaby Attack |
+| 13 | 64 | Modify | Known Vulnerability | Lullaby Attack |
+| 13 | 64 | Replay | Known Vulnerability | Lullaby Attack |
+| 27 | 24 | Modify | Known Vulnerability | Lullaby Attack |
+| 27 | 47 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 29 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 29 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 29 | Replay | Known Vulnerability | Lullaby Attack |
+| 32 | 34 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 34 | Replay | Known Vulnerability | Lullaby Attack |
+| 32 | 38 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 38 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 47 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 47 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 47 | Replay | Known Vulnerability | Lullaby Attack |
+| 32 | 64 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 64 | Drop | Known Vulnerability | Lullaby Attack |
+| 32 | 64 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 64 | Replay | Known Vulnerability | Lullaby Attack |
+| 32 | 66 | Inject | Known Vulnerability | Lullaby Attack |
+| 32 | 66 | Drop | Known Vulnerability | Lullaby Attack |
+| 32 | 66 | Modify | Known Vulnerability | Lullaby Attack |
+| 32 | 66 | Replay | Known Vulnerability | Lullaby Attack |
+| 33 | 64 | Replay | Known Vulnerability | Lullaby Attack |
+| 33 | 66 | Inject | Known Vulnerability | Lullaby Attack |
+| 33 | 66 | Drop | Known Vulnerability | Lullaby Attack |
+| 33 | 66 | Modify | Known Vulnerability | Lullaby Attack |
+| 33 | 66 | Replay | Known Vulnerability | Lullaby Attack |
+| 34 | 47 | Inject | Known Vulnerability | Lullaby Attack |
+| 34 | 47 | Drop | Known Vulnerability | Lullaby Attack |
+| 34 | 47 | Modify | Known Vulnerability | Lullaby Attack |
+| 34 | 47 | Replay | Known Vulnerability | Lullaby Attack |
+| 38 | 32 | Inject | Known Vulnerability | Lullaby Attack |
+| 38 | 47 | Inject | Known Vulnerability | Lullaby Attack |
+| 38 | 47 | Modify | Known Vulnerability | Lullaby Attack |
+| 38 | 47 | Replay | Known Vulnerability | Lullaby Attack |
+| 471 | 798 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 471 | 798 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 471 | 798 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 471 | 803 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 471 | 803 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 471 | 803 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 47 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 47 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 47 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 64 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 64 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 64 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 13 | 64 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 27 | 24 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 27 | 47 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 29 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 29 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 29 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 34 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 34 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 38 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 38 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 47 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 47 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 47 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 64 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 64 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 64 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 64 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 66 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 66 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 66 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 32 | 66 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 33 | 64 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 33 | 66 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 33 | 66 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 33 | 66 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 33 | 66 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 34 | 47 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 34 | 47 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 34 | 47 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 34 | 47 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 32 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 47 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 47 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 47 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 66 | Inject | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 66 | Drop | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 66 | Modify | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 38 | 66 | Replay | Known Vulnerability | Incarceration with RRCReject and RRCRelease |
+| 17 | 33 | Inject | Known Vulnerability | Measurement Report Leak |
+| 17 | 33 | Modify | Known Vulnerability | Measurement Report Leak |
+| 17 | 33 | Replay | Known Vulnerability | Measurement Report Leak |
+| 19 | 33 | Inject | Known Vulnerability | Measurement Report Leak |
+| 19 | 33 | Drop | Known Vulnerability | Measurement Report Leak |
+| 19 | 33 | Modify | Known Vulnerability | Measurement Report Leak |
+| 19 | 33 | Replay | Known Vulnerability | Measurement Report Leak |
+| 19 | 53 | Inject | Known Vulnerability | Measurement Report Leak |
+| 19 | 53 | Drop | Known Vulnerability | Measurement Report Leak |
+| 19 | 53 | Modify | Known Vulnerability | Measurement Report Leak |
+| 19 | 53 | Replay | Known Vulnerability | Measurement Report Leak |
+| 19 | 56 | Modify | Known Vulnerability | Measurement Report Leak |
+| 19 | 56 | Replay | Known Vulnerability | Measurement Report Leak |
+| 19 | 57 | Inject | Known Vulnerability | Measurement Report Leak |
+| 19 | 57 | Drop | Known Vulnerability | Measurement Report Leak |
+| 19 | 57 | Modify | Known Vulnerability | Measurement Report Leak |
+| 19 | 57 | Replay | Known Vulnerability | Measurement Report Leak |
+| 26 | 43 | Inject | Known Vulnerability | Measurement Report Leak |
+| 26 | 43 | Modify | Known Vulnerability | Measurement Report Leak |
+| 27 | 24 | Inject | Known Vulnerability | Measurement Report Leak |
+| 27 | 24 | Modify | Known Vulnerability | Measurement Report Leak |
+| 27 | 42 | Inject | Known Vulnerability | Measurement Report Leak |
+| 27 | 43 | Inject | Known Vulnerability | Measurement Report Leak |
+| 27 | 43 | Modify | Known Vulnerability | Measurement Report Leak |
+| 27 | 59 | Modify | Known Vulnerability | Measurement Report Leak |
+| 31 | 53 | Inject | Known Vulnerability | Measurement Report Leak |
+| 31 | 53 | Drop | Known Vulnerability | Measurement Report Leak |
+| 31 | 53 | Modify | Known Vulnerability | Measurement Report Leak |
+| 31 | 53 | Replay | Known Vulnerability | Measurement Report Leak |
+| 33 | 29 | Inject | Known Vulnerability | Measurement Report Leak |
+| 33 | 29 | Drop | Known Vulnerability | Measurement Report Leak |
+| 33 | 29 | Modify | Known Vulnerability | Measurement Report Leak |
+| 33 | 29 | Replay | Known Vulnerability | Measurement Report Leak |
+| 33 | 32 | Inject | Known Vulnerability | Measurement Report Leak |
+| 33 | 32 | Drop | Known Vulnerability | Measurement Report Leak |
+| 33 | 32 | Modify | Known Vulnerability | Measurement Report Leak |
+| 33 | 32 | Replay | Known Vulnerability | Measurement Report Leak |
+| 33 | 34 | Inject | Known Vulnerability | Measurement Report Leak |
+| 33 | 34 | Drop | Known Vulnerability | Measurement Report Leak |
+| 33 | 34 | Modify | Known Vulnerability | Measurement Report Leak |
+| 442 | 879 | Modify | Known Vulnerability | RLF Report Leak |
+| 442 | 880 | Inject | Known Vulnerability | RLF Report Leak |
+| 797 | 801 | Inject | Known Vulnerability | RLF Report Leak |
+| 799 | 431 | Inject | Known Vulnerability | RLF Report Leak |
+| 799 | 801 | Inject | Known Vulnerability | RLF Report Leak |
+| 799 | 801 | Replay | Known Vulnerability | RLF Report Leak |
+| 812 | 431 | Modify | Known Vulnerability | RLF Report Leak |
+| 812 | 801 | Inject | Known Vulnerability | RLF Report Leak |
+| 812 | 801 | Drop | Known Vulnerability | RLF Report Leak |
+| 812 | 801 | Modify | Known Vulnerability | RLF Report Leak |
+| 812 | 801 | Replay | Known Vulnerability | RLF Report Leak |
+| 19 | 57 | Inject | Known Vulnerability | RLF Report Leak |
+| 19 | 57 | Drop | Known Vulnerability | RLF Report Leak |
+| 19 | 57 | Modify | Known Vulnerability | RLF Report Leak |

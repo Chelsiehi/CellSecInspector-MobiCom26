@@ -1,0 +1,92 @@
+| Start Node | End Node | Attack | Vulnerability Type | Vulnerability Name |
+|------------|----------|--------|--------------------|--------------------|
+| 2093 | 6507 | Inject | Known Vulnerability | V2X Message Spoofing over PC5 |
+| 2319 | 6077 | Drop | New Vulnerability | Emergency Session Teardown via Forged Signaling to Victim |
+| 2319 | 6077 | Modify | New Vulnerability | Emergency Session Teardown via Forged Signaling to Victim |
+| 2319 | 6077 | Replay | New Vulnerability | Emergency Session Teardown via Forged Signaling to Victim |
+| 2062 | 2098 | Drop | New Vulnerability | Multi-USIM Problematic Reachability |
+| 79 | 85 | Drop | Known Vulnerability | Neutralizing TMSI Refreshment |
+| 79 | 1293 | Drop | Known Vulnerability | Neutralizing TMSI Refreshment |
+| 83 | 1293 | Inject | Known Vulnerability | Neutralizing TMSI Refreshment |
+| 2062 | 2073 | Replay | Known Vulnerability | NAS Counter Reset |
+| 5810 | 4204 | Replay | Known Vulnerability | NAS Counter Reset |
+| 4890 | 4888 | Replay | Known Vulnerability | NAS Counter Reset |
+| 4890 | 6841 | Replay | Known Vulnerability | NAS Counter Reset |
+| 6730 | 1693 | Inject | Known Vulnerability | Uplink NAS Counter Desynchronization |
+| 2062 | 2073 | Modify | Known Vulnerability | Uplink NAS Counter Desynchronization |
+| 2724 | 2351 | Modify | Known Vulnerability | Uplink NAS Counter Desynchronization |
+| 2328 | 2724 | Modify | Known Vulnerability | Uplink NAS Counter Desynchronization |
+| 2062 | 2073 | Replay | Known Vulnerability | Exposing NAS Sequence Number |
+| 5810 | 4204 | Replay | Known Vulnerability | Exposing NAS Sequence Number |
+| 4890 | 4888 | Replay | Known Vulnerability | Exposing NAS Sequence Number |
+| 6843 | 4888 | Replay | Known Vulnerability | Exposing NAS Sequence Number |
+| 300 | 1881 | Inject | Known Vulnerability | Cutting off the Device |
+| 300 | 1881 | Modify | Known Vulnerability | Cutting off the Device |
+| 300 | 5092 | Inject | Known Vulnerability | Cutting off the Device |
+| 300 | 5093 | Inject | Known Vulnerability | Cutting off the Device |
+| 300 | 5093 | Modify | Known Vulnerability | Cutting off the Device |
+| 300 | 5093 | Replay | Known Vulnerability | Cutting off the Device |
+| 300 | 5118 | Inject | Known Vulnerability | Cutting off the Device |
+| 300 | 5118 | Modify | Known Vulnerability | Cutting off the Device |
+| 300 | 5118 | Replay | Known Vulnerability | Cutting off the Device |
+| 6982 | 300 | Modify | Known Vulnerability | Cutting off the Device |
+| 2110 | 3482 | Inject | Known Vulnerability | Exposure of SQN |
+| 2328 | 2352 | Inject | Known Vulnerability | Exposure of SQN |
+| 1790 | 4383 | Modify | Known Vulnerability | Exposure of SQN |
+| 2110 | 3482 | Inject | Known Vulnerability | 5G AKA DoS Attack |
+| 2328 | 2352 | Inject | Known Vulnerability | 5G AKA DoS Attack |
+| 1790 | 4383 | Inject | Known Vulnerability | 5G AKA DoS Attack |
+| 300 | 5093 | Inject | Known Vulnerability | 5G AKA DoS Attack |
+| 2110 | 3482 | Inject | Known Vulnerability | SUCI Catching |
+| 1790 | 4383 | Inject | Known Vulnerability | SUCI Catching |
+| 1790 | 4383 | Modify | Known Vulnerability | SUCI Catching |
+| 2110 | 3482 | Inject | Known Vulnerability | IMSI Cracking |
+| 1790 | 4383 | Inject | Known Vulnerability | IMSI Cracking |
+| 1790 | 4383 | Modify | Known Vulnerability | IMSI Cracking |
+| 6730 | 1693 | Inject | Known Vulnerability | NAS COUNT Update Attack |
+| 2062 | 2073 | Replay | Known Vulnerability | NAS COUNT Update Attack |
+| 5810 | 4204 | Replay | Known Vulnerability | NAS COUNT Update Attack |
+| 4890 | 4888 | Replay | Known Vulnerability | NAS COUNT Update Attack |
+| 6843 | 4888 | Replay | Known Vulnerability | NAS COUNT Update Attack |
+| 1790 | 4383 | Modify | Known Vulnerability | Deletion of Allowed CAG List |
+| 4344 | 8421 | Inject | Known Vulnerability | Deletion of Allowed CAG List |
+| 2724 | 2349 | Modify | Known Vulnerability | Deletion of Allowed CAG List |
+| 4890 | 4888 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 4888 | Modify | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 4888 | Replay | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 5808 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 5808 | Modify | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 6841 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 6841 | Modify | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 4890 | 6841 | Replay | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 5810 | 4888 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 5810 | 4888 | Modify | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 5810 | 5808 | Inject | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 5810 | 5808 | Replay | Known Vulnerability | Downgrade via ATTACH/REGISTRATION REJECT |
+| 300 | 5093 | Inject | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 300 | 5093 | Modify | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 300 | 5093 | Replay | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 2110 | 3482 | Inject | Known Vulnerability | AUTHENTICATION REJECT Attack |
+| 300 | 1881 | Inject | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 1881 | Drop | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 1881 | Modify | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 5092 | Inject | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 5093 | Modify | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 5093 | Replay | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 5118 | Inject | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 300 | 5118 | Modify | Known Vulnerability | DETACH / DEREGISTRATION REQUEST Attack |
+| 6843 | 4888 | Inject | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 4888 | Modify | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 4888 | Replay | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 5808 | Inject | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 5808 | Modify | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 5808 | Replay | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 6841 | Inject | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 6841 | Modify | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 6841 | Replay | Known Vulnerability | SERVICE REJECT Attack |
+| 6843 | 4204 | Modify | Known Vulnerability | SERVICE REJECT Attack |
+| 83 | 1293 | Modify | Known Vulnerability | Neutralizing TMSI Refreshment |
+| 6730 | 1693 | Drop | Known Vulnerability | Uplink NAS Counter Desynchronization |
+| 2052 | 2089 | Modify | Known Vulnerability | Exposure of SQN |
+| 2328 | 2352 | Inject | Known Vulnerability | SUCI Catching |
+| 4344 | 8421 | Modify | Known Vulnerability | Deletion of Allowed CAG List |
