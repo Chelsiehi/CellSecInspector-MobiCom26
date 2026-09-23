@@ -3,7 +3,6 @@
 import argparse
 import json
 import os
-import os
 import re
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
@@ -57,6 +56,33 @@ def parse_connection_blocks(path: Path) -> Dict[Tuple[int, int], Dict[str, Dict[
     return blocks
 
 
+def find_state_connected_connection(
+    blocks: Dict[Tuple[int, int], Dict[str, Dict[str, str]]],
+    source_event: int,
+    target_event: int,
+) -> Dict[str, Dict[str, str]]:
+    """Return a connection only when its states form a valid transition.
+
+    A connection is established by the SCA state semantics, not by assuming
+    that a particular pair of event IDs should be adjacent: the source
+    ``End State`` must equal the target ``Start State``.  Whitespace is
+    normalized so formatting differences in generated detail files do not
+    change the comparison.
+    """
+    details = blocks.get((source_event, target_event))
+    if details is None:
+        raise ValueError(f"No connection details found for {source_event} -> {target_event}")
+
+    end_state = re.sub(r"\s+", " ", details["node_i"].get("End State", "")).strip()
+    start_state = re.sub(r"\s+", " ", details["node_j"].get("Start State", "")).strip()
+    if not end_state or not start_state or end_state != start_state:
+        raise ValueError(
+            f"Events {source_event} -> {target_event} are not state-connected: "
+            f"source End State={end_state!r}, target Start State={start_state!r}"
+        )
+    return details
+
+
 def build_client() -> OpenAI:
     if not DEEPSEEK_API_KEY:
         raise RuntimeError("Missing DEEPSEEK_API_KEY environment variable.")
@@ -75,8 +101,8 @@ def generate_table(client: OpenAI, row: dict[str, Any], details: Dict[str, Dict[
         "",
         "Service-integrity semantic contract:", json.dumps(SERVICE_INTEGRITY_CONTRACT, ensure_ascii=False, indent=2),
         "",
-        "From Event 2062:", json.dumps(node_i, ensure_ascii=False, indent=2),
-        "To Event 2073:", json.dumps(node_j, ensure_ascii=False, indent=2),
+        f"From Event {row['from']}:", json.dumps(node_i, ensure_ascii=False, indent=2),
+        f"To Event {row['to']}:", json.dumps(node_j, ensure_ascii=False, indent=2),
         "",
         "Requirements:",
         "- Establish normal registration, then Event 2062 RRC suspension and its RRC-inactive state.",
@@ -97,7 +123,11 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=OUTPUT / "05_text_case.md")
     args = parser.parse_args()
     row = next(item for item in parse_security_md(args.security_md) if (item["from"], item["to"], item["attack"]) == TARGET)
-    details = parse_connection_blocks(args.details_txt)[TARGET[:2]]
+    details = find_state_connected_connection(
+        parse_connection_blocks(args.details_txt),
+        source_event=TARGET[0],
+        target_event=TARGET[1],
+    )
     table = generate_table(build_client(), row, details)
     args.output.write_text("# Service-Integrity Validation Test Procedure\n\n## Event 2062 -> Event 2073 (Replay)\n\n" + table + "\n", encoding="utf-8")
     print(f"Wrote one text case: {args.output}")

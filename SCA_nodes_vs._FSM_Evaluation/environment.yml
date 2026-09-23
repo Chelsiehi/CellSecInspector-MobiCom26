@@ -1,0 +1,11 @@
+name: cellsecinspector-hermes
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Install the exact Hermes/NEUTREX dependencies in the pinned Hermes
+  # checkout, then freeze them for archival (see the README).
+  - pip:
+      - supar

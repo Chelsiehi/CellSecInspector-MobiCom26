@@ -36,6 +36,12 @@ At a high level, the paper argues that SCA nodes preserve more of the protocol s
   - runs a Hermes labeling pipeline on raw spec text
   - converts Hermes-style outputs into the same four-field structure used in SCA nodes
   - computes the `0/1/2/3/4 valid fields` completeness statistics used in the RQ3 discussion
+- `reproduce_hermes.sh`
+  - verifies the pinned Hermes commit and runs the complete Hermes extraction with explicit paths
+- `HERMES_COMMIT.txt`
+  - records the exact Hermes commit used for evaluation
+- `environment.yml`
+  - provides a Conda starting environment for the Python-based artifact
 - `run_arcane_light.py`
   - runs a lightweight refinement procedure over an initial ARCANE-like model and traces
   - produces a DOT graph that can be used for structural inspection
@@ -98,6 +104,26 @@ python3 run_arcane_light.py --help
 
 The Hermes repository and model repository may be the same checkout. Pass explicit paths because the defaults in the script refer to the machine used for the original experiment.
 
+The evaluation used Hermes commit
+`d37fe752fec2592dcc10cc11fabfcb6429d6a216`, recorded in
+`HERMES_COMMIT.txt`. For reproducibility, use a snapshot or a Git checkout of
+Hermes at exactly this commit. The helper below refuses to run if the checkout
+is at a different commit. This artifact keeps Hermes as an external checkout
+because the upstream repository URL and its redistribution terms are not part
+of this repository; if those become available, the same commit can be vendored
+or added as a Git submodule without changing the helper interface.
+
+For Python compatibility, create the supplied Conda environment first and then
+install the dependencies specified by the pinned Hermes/NEUTREX checkout. Once
+the environment has been validated, preserve the exact package versions with
+`conda env export --no-builds > environment-lock.yml` (or provide a Docker
+image containing the same environment).
+
+```bash
+conda env create -f environment.yml
+conda activate cellsecinspector-hermes
+```
+
 #### Command
 
 ```bash
@@ -111,6 +137,22 @@ python3 hermes_4fields.py \
   --model-repo /absolute/path/to/hermes-spec-to-fsm-main \
   --python-bin /absolute/path/to/hermes-spec-to-fsm-main/neutrex/.venv/bin/python
 ```
+
+The recommended reproducibility entry point is the helper script. It keeps the
+Hermes revision, model location, and interpreter explicit:
+
+```bash
+export HERMES_DIR=/absolute/path/to/hermes-spec-to-fsm-main
+export MODEL_REPO=/absolute/path/to/hermes-spec-to-fsm-main
+export HERMES_PYTHON=/absolute/path/to/hermes-spec-to-fsm-main/neutrex/.venv/bin/python
+
+./reproduce_hermes.sh /absolute/path/to/spec.txt ./outputs/hermes
+```
+
+`HERMES_DIR` must be a Git checkout at the commit in `HERMES_COMMIT.txt`, and
+`MODEL_REPO` must contain the trained model directories listed above. Set
+`HERMES_NAME` to override the output basename; otherwise it is derived from the
+input filename.
 
 The wrapper performs three stages:
 
