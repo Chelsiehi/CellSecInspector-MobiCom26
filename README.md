@@ -47,6 +47,32 @@ CellSecInspector follows a multi-stage workflow:
 ├── README.md
 ```
 
+## Reproducible Python Environment
+
+The Python artifacts across this repository target Python 3.10. To reduce
+compatibility differences between Python and package versions, we recommend
+using the repository-level Conda environment rather than installing each
+directory's dependencies into a shared system Python installation.
+
+From the repository root, run:
+
+```bash
+conda env create -f environment.yml
+conda activate cellsecinspector
+```
+
+The root [`environment.yml`](./environment.yml) covers the Python dependencies
+used by SpecAdaptation, the core CellSecInspector pipeline, the minimal example,
+and the repository-native RQ3 evaluation scripts. Individual
+`requirements.txt` files remain available for users who prefer isolated
+per-component environments.
+
+The Hermes/NEUTREX comparison additionally depends on an external repository,
+trained models, and its own dependency versions. Use the dedicated
+[`SCA_nodes_vs._FSM_Evaluation/environment.yml`](./SCA_nodes_vs._FSM_Evaluation/environment.yml)
+and the pinned-revision instructions in that directory's README for that
+experiment.
+
 ## Seven New Vulnerabilities
 The following table summarizes the vulnerabilities detected by CellSecInspector.  
 A total of 43 vulnerabilities were analyzed, among which 36 were previously reported, and 7* are newly discovered by CellSecInspector.
@@ -176,6 +202,5 @@ A practical minimal path through the repository is:
 4. Generate validation procedures using `VulnTestGenerator/`
 
 This path corresponds to the core CellSecInspector pipeline.
-
 
 

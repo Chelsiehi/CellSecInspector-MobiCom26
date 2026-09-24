@@ -43,6 +43,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+This installs all dependencies required by the builder, including
+`tqdm>=4.66.0`, which is used to display progress during function-chain
+construction. Alternatively, the repository-level Conda environment described
+in the root README includes the same dependency.
+
 ## DeepSeek API Configuration
 
 `Function_chain_builder.py` uses the DeepSeek API for semantic, causal, and reference-guided reasoning.
@@ -125,4 +130,3 @@ Available `--run` values:
 source_event_id    target_event_id    matched_state
 12                 18                 REGISTERED
 ```
-

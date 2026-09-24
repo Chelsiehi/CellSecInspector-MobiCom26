@@ -1,0 +1,21 @@
+name: cellsecinspector
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python is pinned to the version used by the repository artifacts to avoid
+  # behavior differences across Python releases.
+  - python=3.10
+  - pip
+  - pip:
+      # Core CellSecInspector pipeline and minimal example
+      - openai>=1.30.0
+      - torch
+      - transformers>=4.41.0
+      - tqdm>=4.66.0
+      - json5>=0.9.0
+      # Specification adaptation utilities
+      - python-docx>=1.1.0
+      - nltk>=3.8.1
+      - datasets
+      - peft
